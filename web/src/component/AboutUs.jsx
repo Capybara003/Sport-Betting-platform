@@ -1,14 +1,12 @@
-import React from 'react';
-
 const AboutUs = () => {
   return (
     <>
       <div
-        className="relative bg-la bg-blend-multiply w-full h-max bg-cover bg-center"
+        className="relative px-8 bg-la bg-blend-multiply w-full h-max bg-cover bg-center"
         style={{ backgroundImage: "url('images/')" }}
       >
         <div className="text-center pt-20 text-4xl text-linear font-extrabold">
-          <h1>About Us</h1>
+          <h1 className="text-white">About Us</h1>
         </div>
         <div className="px-4 max-w-screen-xl text-center py-6 mx-auto lg:py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

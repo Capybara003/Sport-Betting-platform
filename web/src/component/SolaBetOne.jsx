@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Link } from "react-router-dom";
+import Link from 'next/link';
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import HeroSection from './HeroSection';
 import AboutUs from './AboutUs';
@@ -32,7 +32,7 @@ const SolaBetOne = () => {
     <>
       <nav className="fixed w-full top-0 start-0 bg-no-repeat bg-blend-multiply bg-la z-10" style={{ backgroundImage: "url('images/image 4.png')" }}>
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <Link to='/home' className="flex items-center space-x-3 rtl:space-x-reverse">
+          <Link href='/home' className="flex items-center space-x-3 rtl:space-x-reverse"> 
             
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -99,10 +99,11 @@ const SolaBetOne = () => {
                 Benefits
               </li>
             </ul>
+
           </div>
         </div>
       </nav>
-      <div ref={home}>
+      <div className="bg-[#020002]" ref={home}>
         <HeroSection />
       </div>
       <div ref={about}>

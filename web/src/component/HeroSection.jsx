@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <>
+    <div className=''>
       <div
         className="relative brightness-110 bg-purple-700 bg-blend-multiply w-full h-max bg-cover bg-center  hue-rotate-15"
         style={{ backgroundImage: "url('images/image 4.png')" }}
@@ -109,7 +109,7 @@ const HeroSection = () => {
           </div>
         </section>
       </div>
-    </>
+    </div>
   );
 };
 
