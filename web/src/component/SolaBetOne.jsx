@@ -6,7 +6,6 @@ import AboutUs from './AboutUs';
 import Features from './Features';
 import LiveBetting from './LiveBetting';
 import Score from './Score';
-import Footer from './Footer';
 
 const SolaBetOne = () => {
   const home = useRef(null);
@@ -114,7 +113,7 @@ const SolaBetOne = () => {
       </div>
       <LiveBetting />
       <Score />
-      <Footer />
+      
     </>
   )
 }
