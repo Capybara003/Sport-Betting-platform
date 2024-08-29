@@ -6,6 +6,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useWallet } from "@solana/wallet-adapter-react";
 import Footer from "@/component/Footer";
+import NavbarSection from "@/component/navbar";
 
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -16,6 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <ToastContainer />
 
         <TransitionContextProvider>
+          {/* <NavbarSection /> */}
           <Component {...pageProps} />
           <Footer />
         </TransitionContextProvider>

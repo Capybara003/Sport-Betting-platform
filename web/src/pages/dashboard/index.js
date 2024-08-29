@@ -2,8 +2,10 @@ import Layout from "./layout";
 import TabButton from "@/element/TabButton";
 import { useState } from "react";
 import { useTransition } from "react";
+import NavbarSection from "@/component/navbar";
 
-export default function Home() {
+
+export default function DashHome() {
   
   const TAB_DATA = [
      {
@@ -75,12 +77,18 @@ export default function Home() {
 
 
   return (
+     <>
+     
     <Layout>
+    
+     
       <section>
         <div>
+       
           <h3 className="text-white text-xl sm:text-3xl font-bold leading-10">
             Home
           </h3>
+
           
         </div>
 
@@ -89,5 +97,6 @@ export default function Home() {
 
       
     </Layout>
+    </>
   );
 }
