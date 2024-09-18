@@ -24,7 +24,7 @@ const links = [
     name: 'Event List', href: '/dashboard/EventList', icon: PiUsersThree
   },
   {
-    name: 'Reward', href: '/dashboard/Reward', icon: BsGift 
+    name: 'Crypto', href: '/dashboard/Crypto', icon: BsGift 
   },
   {
     name: 'Community', href: '/dashboard/Community', icon: IoSettingsOutline
