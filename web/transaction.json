@@ -1,0 +1,51 @@
+[
+    {
+      "date": "20/10/24 (12:15)",
+      "transaction": "Deposit",
+      "amount": "20 USDT",
+      "status": "Pending",
+      "balanceBefore": "0.00345667",
+      "balanceAfter": "0.00345667"
+    },
+    {
+      "date": "21/10/24 (14:30)",
+      "transaction": "Withdrawal",
+      "amount": "50 USDT",
+      "status": "Completed",
+      "balanceBefore": "0.00567890",
+      "balanceAfter": "0.00267890"
+    },
+    {
+      "date": "20/10/24 (12:15)",
+      "transaction": "Deposit",
+      "amount": "20 USDT",
+      "status": "Pending",
+      "balanceBefore": "0.00345667",
+      "balanceAfter": "0.00345667"
+    },
+    {
+      "date": "21/10/24 (14:30)",
+      "transaction": "Withdrawal",
+      "amount": "50 USDT",
+      "status": "Completed",
+      "balanceBefore": "0.00567890",
+      "balanceAfter": "0.00267890"
+    },
+    {
+      "date": "20/10/24 (12:15)",
+      "transaction": "Deposit",
+      "amount": "20 USDT",
+      "status": "Pending",
+      "balanceBefore": "0.00345667",
+      "balanceAfter": "0.00345667"
+    },
+    {
+      "date": "21/10/24 (14:30)",
+      "transaction": "Withdrawal",
+      "amount": "50 USDT",
+      "status": "Completed",
+      "balanceBefore": "0.00567890",
+      "balanceAfter": "0.00267890"
+    }
+  ]
+  
