@@ -4,7 +4,7 @@ import React from 'react';
 export default function Par() {
   return (
     <Layout>
-      <div className='h-screen flex flex-row bg-back p-6'>
+      <div className='h-screen hidden md:flex flex-row bg-back p-6'>
         {/* Main content with cards and table */}
         <div className='w-3/4 mt-0'>
           {/* Card 1 */}
@@ -144,7 +144,7 @@ export default function Par() {
                   <td className='p-2'>Robert King</td>
                 </tr>
                 <tr className='text-slate-100 text-sm'>
-                  <td className='pl-32'>LM</td>
+                  <td className='pl-32'>LW</td>
                   <td className='p-2'>Thomas Moore</td>
                 </tr>
               </tbody>
@@ -246,6 +246,127 @@ export default function Par() {
             <p className='text-lg font-bold pb-1'>Team Chelsea:</p>
             <p className='text-sm pb-1'>Formation: 4-4-2</p>
             <p className='text-sm'>Captain: Andrew Evans</p>
+          </div>
+        </div>
+      </div>
+      {/* Mobile View */}
+      <div className='relative h-screen md:hidden flex-grow flex flex-row bg-back p-2 overflow-auto max-h-3/4 no-srollbar'>
+        {/* Main content with cards and table */}
+        <div className='w-3/4 mt-0 max-h-3/4 relative'>
+          {/* Card 1 */}
+          <div className='relative h-52'>
+            <div className='w-72 border-b-2 ml-6 h-40 border-stone-500'>
+              <div className=' w-full h-16 px-2 py-1 flex overflow-hidden'>
+                <img
+                  src='/images/Mancity.png'
+                  alt='Profile'
+                  className='w-14 h-14 rounded-full'
+                />
+                <div className='px-10'>
+                  <p className='bg-red-600 text-white m-2 px-2'>Live</p>
+                  <p className='text-white text-md mx-2 ml-4'>3:1</p>
+                </div>
+
+                <img
+                  src='/images/chelsea.png'
+                  alt='Profile'
+                  className='w-14 h-14 rounded-full'
+                />
+              </div>
+              <div className='mx-6 flex text-white text-sm'>
+                <p className='pr-32'>Man City</p>
+                <p>Chelsea</p>
+              </div>
+
+              <div className='p-2 rounded-md overflow-hidden grid grid-cols-3 gap-12'>
+                <button className='border text-xs w-12 h-10 mt-2 shadow-md bg-opacity-60 text-white py-1 rounded-md bg-fm border-white'>
+                  <p>1</p>
+                  <p>1.20</p>
+                </button>
+                <button className='border mt-2 shadow-md text-xs w-12 h-10 bg-opacity-60 text-white py-1 rounded-md bg-fm border-white'>
+                  <p>X</p>
+                  <p>6.00</p>
+                </button>
+                <button className='border py-1 mt-2 shadow-md text-xs w-12 h-10 bg-opacity-60 text-white rounded-md bg-fm border-white'>
+                  <p>2</p>
+                  <p>7.30</p>
+                </button>
+              </div>
+            </div>
+            <div className='w-full overflow-hidden flex'>
+              <div className='text-white ml-8 mt-4 overflow-hidden'>
+                <p className='text-base font-bold pb-1'>Team Man City:</p>
+                <p className='text-xs pb-1'>Formation: 4-3-3</p>
+                <p className='text-xs'>Captain: James Davis</p>
+              </div>
+              <div className='text-white ml-8 mt-4'>
+                <p className='text-base font-bold pb-1'>Team Chelsea:</p>
+                <p className='text-xs pb-1'>Formation: 4-4-2</p>
+                <p className='text-xs'>Captain: Andrew Evans</p>
+              </div>
+            </div>
+          </div>
+          <br />
+
+          {/* Table */}
+          <div className='max-h-3/4'>
+            <div className='w-full max-w-xl mt-6 bg-guy rounded-xl overflow-hidden'>
+              <table className='w-full border-collapse'>
+                <thead>
+                  <tr className='border-b-2 text-sm'>
+                    <th className='text-left pl-6 text-white'>Position</th>
+                    <th className='text-left pl-4 text-white'>Player</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr className='text-slate-100 text-xs'>
+                    <td className='pl-12'>GK</td>
+                    <td className='p-2'>John Smith</td>
+                  </tr>
+                  <tr className='text-slate-100 text-xs'>
+                    <td className='pl-12'>RB</td>
+                    <td className='p-2'>Micheal Johnson</td>
+                  </tr>
+                  <tr className='text-slate-100 text-xs'>
+                    <td className='pl-12'>CB</td>
+                    <td className='p-2'>David Lee</td>
+                  </tr>
+                  <tr className='text-slate-100 text-xs'>
+                    <td className='pl-12'>CB</td>
+                    <td className='p-2'>Steven Wright</td>
+                  </tr>
+                  <tr className='text-slate-100 text-xs'>
+                    <td className='pl-12'>LB</td>
+                    <td className='p-2'>Alex Brown</td>
+                  </tr>
+                  <tr className='text-slate-100 text-xs'>
+                    <td className='pl-12'>RM</td>
+                    <td className='p-2'>Chris Adams</td>
+                  </tr>
+                  <tr className='text-slate-100 text-xs'>
+                    <td className='pl-12'>CM</td>
+                    <td className='p-2'>James Davis</td>
+                  </tr>
+                  <tr className='text-slate-100 text-xs'>
+                    <td className='pl-12'>LM</td>
+                    <td className='p-2'>Peter Jones</td>
+                  </tr>
+                  <tr className='text-slate-100 text-xs'>
+                    <td className='pl-12'>RW</td>
+                    <td className='p-2'>Alan Green</td>
+                  </tr>
+                  <tr className='text-slate-100 text-xs'>
+                    <td className='pl-12'>ST</td>
+                    <td className='p-2'>Robert King</td>
+                  </tr>
+                  <tr className='text-slate-100 text-xs'>
+                    <td className='pl-12'>LW</td>
+                    <td className='p-2'>Thomas Moore</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
