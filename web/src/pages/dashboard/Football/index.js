@@ -1,5 +1,6 @@
 import Layout from '../layout';
 import Link from 'next/link';
+import Navbar from '../../../../components/Navbar';
 
 export default function Football() {
   // Array of upcoming games
@@ -62,19 +63,19 @@ export default function Football() {
 
   return (
     <Layout>
-      <div className='h-screen flex flex-row bg-back p-6'>
+      <div className='flex flex-row bg-back p-6 overflow-hidden'>
         <div className='w-full mt-0'>
           {/* Main header card */}
           <div
-            className='relative bg-cover bg-center w-full h-80 p-6 text-white rounded-sm mt-4 ml-8'
+            className='relative bg-cover bg-center w-full md:w-full h-44 md:h-80 p-6 text-white rounded-sm mt-1 grid place-items-center'
             style={{ backgroundImage: `url('/images/ime.png')` }}
           >
             <div className='absolute inset-0 bg-guy bg-opacity-60'>
-              <div className='relative flex flex-col justify-start ml-20 h-16 w-96 mb-24 mt-32'>
-                <h2 className='text-2xl font-bold'>
+              <div className='relative flex flex-col justify-start ml-10 md:ml-20 h-16 w-96 mb-24 mt-16 md:mt-32'>
+                <h2 className='text-base md:text-2xl font-bold'>
                   The Future of Decentralized
                 </h2>
-                <h3 className='text-2xl font-bold'>
+                <h3 className='text-base md:text-2xl font-bold'>
                   <span className='text-fuchsia-600'>Betting</span> on Solana
                 </h3>
               </div>
@@ -82,7 +83,7 @@ export default function Football() {
           </div>
 
           {/* Upcoming games header */}
-          <div className='flex items-center ml-2 mt-3 text-white text-lg'>
+          <div className='flex items-center ml-2 mt-1 text-white text-sm md:text-lg'>
             <a href='#' className='mx-6 font-bold'>
               Upcoming Football Matches
             </a>
@@ -92,20 +93,16 @@ export default function Football() {
           </div>
 
           {/* Displaying upcoming games */}
-          <div className='my-4 grid grid-cols-2 lg:grid-cols-3 w-full'>
+          <div className='my-4 overflow-x-auto no-scrollbar flex space-x-4 lg:grid lg:grid-cols-3 w-full'>
             {upcomingGames.map((game) => (
               <a
                 key={game.id}
                 href={game.url}
-                className='block w-80 p-0 pb-5 ml-6 mr-1 h-48 mt-5 mb-8 border-stone-500'
+                className='block w-72 md:w-80 p-0 pb-5 h-52 md:h-48 mt-2 mb-8 border-stone-500 flex-shrink-0 '
               >
-                <div className='p-2 bg-add rounded-md flex gap-20'>
-                  <p className='text-white text-xs font-bold justify-start'>
-                    {game.league}
-                  </p>
-                  <p className='text-white text-xs font-bold justify-end'>
-                    {game.date}
-                  </p>
+                <div className='p-2 bg-add rounded-md flex justify-between'>
+                  <p className='text-white text-xs font-bold'>{game.league}</p>
+                  <p className='text-white text-xs font-bold'>{game.date}</p>
                 </div>
                 <div className='bg-guy w-full h-10 px-2 py-1 flex items-center'>
                   <img
@@ -126,15 +123,15 @@ export default function Football() {
                   <h3>Match Winner</h3>
                 </div>
                 <div className='p-2 pb-6 rounded-md overflow-hidden bg-guy grid grid-cols-3 gap-2'>
-                  <button className='mt-2 shadow-md mr-8 w-full bg-opacity-60 text-white py-2 rounded-md bg-fm'>
+                  <button className='mt-2 shadow-md w-full bg-opacity-60 text-white py-2 rounded-md bg-fm'>
                     <p>1</p>
                     <p>{game.odds.team1}</p>
                   </button>
-                  <button className='mt-2 shadow-md mr-8 w-full bg-opacity-60 text-white py-2 rounded-md bg-fm'>
+                  <button className='mt-2 shadow-md w-full bg-opacity-60 text-white py-2 rounded-md bg-fm'>
                     <p>X</p>
                     <p>{game.odds.draw}</p>
                   </button>
-                  <button className='mt-2 shadow-md mr-4 w-full bg-opacity-60 text-white py-2 rounded-md bg-fm'>
+                  <button className='mt-2 shadow-md w-full bg-opacity-60 text-white py-2 rounded-md bg-fm'>
                     <p>2</p>
                     <p>{game.odds.team2}</p>
                   </button>
