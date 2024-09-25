@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const SideNav = () =>{
   return (
-    <div className="flex h-full bg-[#330034] flex-col px-3 py-4 md:px-2">
+    <div className="flex h-full md:h-screen bg-[#330034] flex-col px-3 py-4 md:px-2 md:sticky md:top-0">
       <Link
         className="mb-2 flex h-20 items-end justify-start  rounded-md p-4 md:h-20"
         href="/"
