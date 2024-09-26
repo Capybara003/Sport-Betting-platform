@@ -95,10 +95,11 @@ export default function Football() {
           {/* Displaying upcoming games */}
           <div className='my-4 overflow-x-auto no-scrollbar flex space-x-4 lg:grid lg:grid-cols-3 w-full'>
             {upcomingGames.map((game) => (
+              <div className='md:mx-4'>
               <a
                 key={game.id}
                 href={game.url}
-                className='block w-72 md:w-80 p-0 pb-5 h-52 md:h-48 mt-2 mb-8 border-stone-500 flex-shrink-0 '
+                className='block w-72 md:w-80 p-0 pb-5 h-52 md:h-48 mt-2 mb-8 border-stone-500  flex-shrink-0 '
               >
                 <div className='p-2 bg-add rounded-md flex justify-between'>
                   <p className='text-white text-xs font-bold'>{game.league}</p>
@@ -137,6 +138,8 @@ export default function Football() {
                   </button>
                 </div>
               </a>
+              </div>
+             
             ))}
           </div>
         </div>
