@@ -2,7 +2,7 @@ import Layout from "../layout";
 import Image from "next/image";
 import Link from "next/link";
 import MatchCard from "../../../component/MatchCard.jsx";
-import NavbarSection from "@/component/Navbar.jsx";
+import NavbarSection from "@/component/navbar";
 import ManU from "/public/images/image 16.png";
 import ManCity from "/public/images/image 15.png";
 import transactions from "/transaction.json";

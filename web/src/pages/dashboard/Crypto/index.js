@@ -1,5 +1,5 @@
 import Layout from "../layout";
-import NavbarSection from "@/component/Navbar.jsx";
+import NavbarSection from "@/component/navbar";
 import transactions from "/transaction.json";
 import Link from "next/link";
 import Image from "next/image";

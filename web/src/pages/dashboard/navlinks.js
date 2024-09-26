@@ -20,9 +20,6 @@ const links = [
     name: 'Football', href: '/dashboard/Football ', icon: IoArchiveOutline
   },
   {
-    name: 'View Odds', href: '/dashboard/ViewOdds', icon: PiUsersThree
-  },
-  {
     name: 'Crypto Price Betting', href: '/dashboard/Crypto', icon: BsGift 
   },
   {

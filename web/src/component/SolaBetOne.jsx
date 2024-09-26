@@ -9,7 +9,7 @@ import AboutUs from './AboutUs';
 import Features from './Features';
 import LiveBetting from './LiveBetting';
 import Score from './Score';
-import NavbarSection from './Navbar';
+import NavbarSection from './navbar';
 
 
 
