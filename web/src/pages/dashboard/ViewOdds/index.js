@@ -1,10 +1,10 @@
 import Layout from "../layout";
 
-export default function BettingHistory() {
+export default function ViewOdds() {
      return(
           <Layout>
              <div className="text-white">
-                <h1>BettingHistory</h1>
+                <h1>Incoming..</h1>
             </div>
           </Layout>
      )

@@ -15,19 +15,15 @@ import { IoSettingsOutline } from "react-icons/io5";
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
 const links = [
-  { name: 'Main Categories', href: '/dashboard', icon: IoHomeOutline },
+  { name: 'Main Categories', href: '', icon: IoHomeOutline },
   {
     name: 'Football', href: '/dashboard/Football ', icon: IoArchiveOutline
   },
-  { name: 'Betting History', href: '/dashboard/BettingHistory', icon: PiUserLight},
   {
-    name: 'Event List', href: '/dashboard/EventList', icon: PiUsersThree
+    name: 'View Odds', href: '/dashboard/ViewOdds', icon: PiUsersThree
   },
   {
-    name: 'Crypto', href: '/dashboard/Crypto', icon: BsGift 
-  },
-  {
-    name: 'Community', href: '/dashboard/Community', icon: IoSettingsOutline
+    name: 'Crypto Price Betting', href: '/dashboard/Crypto', icon: BsGift 
   },
   {
     name: 'Profile', href: '/dashboard/Profile', icon: IoSettingsOutline

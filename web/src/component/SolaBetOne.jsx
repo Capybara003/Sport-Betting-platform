@@ -9,7 +9,8 @@ import AboutUs from './AboutUs';
 import Features from './Features';
 import LiveBetting from './LiveBetting';
 import Score from './Score';
-import NavbarSection from './navbar';
+import NavbarSection from './Navbar';
+
 
 
 const SolaBetOne = () => {
@@ -40,7 +41,7 @@ const SolaBetOne = () => {
   useEffect(() => {
     if (wallet.connected) {
       // Redirect to dashboard when the wallet is connected
-      router.push('/dashboard');
+      router.push('/dashboard/Football');
     }
   }, [wallet.connected, router]);
 
