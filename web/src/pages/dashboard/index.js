@@ -2,8 +2,6 @@ import Layout from "./layout";
 import TabButton from "@/element/TabButton";
 import { useState } from "react";
 import { useTransition } from "react";
-import NavbarSection from "@/component/Navbar";
-
 
 export default function DashHome() {
   

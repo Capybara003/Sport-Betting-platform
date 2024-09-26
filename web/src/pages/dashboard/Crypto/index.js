@@ -1,10 +1,10 @@
 import Layout from "../layout";
-import NavbarSection from "../../../component/Navbar.jsx";
-import transactions from "../../../../transaction.json";
+import NavbarSection from "@/component/Navbar.jsx";
+import transactions from "/transaction.json";
 import Link from "next/link";
 import Image from "next/image";
-import ManU from "../../../../public/images/image 16.png";
-import ManCity from "../../../../public/images/image 15.png";
+import ManU from "/public/images/image 16.png";
+import ManCity from "/public/images/image 15.png";
 
 export default function Reward() {
   return (
