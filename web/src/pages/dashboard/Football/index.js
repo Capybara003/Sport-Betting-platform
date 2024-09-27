@@ -1,5 +1,6 @@
 import Layout from '../layout';
 import Link from 'next/link';
+import Image from 'next/image';
 // import Navbar from '../../../../components/Navbar';
 
 export default function Football() {
@@ -84,61 +85,79 @@ export default function Football() {
 
           {/* Upcoming games header */}
           <div className='flex items-center ml-2 mt-1 text-white text-sm md:text-lg'>
-            <a href='#' className='mx-6 font-bold'>
+            <a href='#' className='mx-6 font-extrabold'>
               Upcoming Football Matches
             </a>
-            <a href='#' className='mx-6'>
+            <a href='#' className='text-[#c6b3c5] mx-6'>
               Leader Board
             </a>
           </div>
 
+
+
           {/* Displaying upcoming games */}
-          <div className='my-4 overflow-x-auto no-scrollbar flex space-x-4 lg:grid lg:grid-cols-3 w-full'>
-            {upcomingGames.map((game) => (
-              <div className='md:mx-4'>
-              <a
-                key={game.id}
-                href={game.url}
-                className='block w-72 md:w-80 p-0 pb-5 h-52 md:h-48 mt-2 mb-8 border-stone-500  flex-shrink-0 '
+          <div className=' overflow-x-auto no-scrollbar flex space-x-8 sm:grid sm:grid-cols-3 w-full'>
+            {upcomingGames.map((game, id) => ( 
+              <section  
+              className=" my-6 mx-4 border border-slate-400 cursor-pointer rounded-lg bg-[#2f0a2f]  sm:w-[280px] text-white sm:h-[291px]"
               >
-                <div className='p-2 bg-add rounded-md flex justify-between'>
-                  <p className='text-white text-xs font-bold'>{game.league}</p>
-                  <p className='text-white text-xs font-bold'>{game.date}</p>
-                </div>
-                <div className='bg-guy w-full h-10 px-2 py-1 flex items-center'>
-                  <img
+                <div className='rounded-lg'>
+                  
+                  <div className='p-2  bg-[#5c0156] rounded-lg flex justify-between gap-4'>
+                    <h3 className='sm:font-lg '>{game.league}</h3>
+                    <h3 className='sm:font-base pt-[4px]'>{game.date}</h3>
+
+                  </div>
+
+                  <div className='px-3  py-4 bg-[#2f0a2f] flex justify-between'>
+                    <div className='flex'>
+                    <img
                     src={game.team1.image}
                     alt={game.team1.name}
-                    className='w-4 h-4 rounded-full'
+                    className='w-4 rounded-full'
                   />
-                  <p className='text-white text-xs ml-2'>{game.team1.name}</p>
-                  <p className='text-fuchsia-600 text-md mx-2'>vs</p>
-                  <img
-                    src={game.team2.image}
-                    alt={game.team2.name}
-                    className='w-4 h-4 rounded-full'
-                  />
-                  <p className='text-xs text-white ml-2'>{game.team2.name}</p>
+                     
+                      <h3 className='sm:font-base'>{game.team1.name}</h3>
+                    </div>
+
+                    <h3 className='text-[#dc01cd]'>VS</h3>
+
+                    <div className='flex'>
+                      <img src={game.team2.image} alt={game.team2.name} className='w-4 rounded-full' />
+                      <h3 className={game.team2.name}>Barcelona</h3>
+                    </div>
+
+                   
+
+                  </div>
+
+                  <div className='px-3 py-4 bg-[#5c0156]'>
+                      <h3 className='sm:font-base'>Match Winner</h3>
+                    </div>
+
+
+                    <div className='flex  justify-between gap-4 px-3 py-4 bg-[#2f0a2f]'>
+
+                      <div className='bg-[#4a2547] border border-current text-center px-5 rounded-lg py-2'>
+                        <h3 className='sm:font-base text-[#927c91]'>1</h3>
+                        <h3 className='sm:font-base text-white'>{game.odds.team1}</h3>
+                      </div>
+
+                      <div className='bg-[#4a2547] border border-current text-center px-5 rounded-lg py-2'>
+                        <h3 className='sm:font-base text-[#927c91]'>X</h3>
+                        <h3 className='sm:font-base text-white'>{game.odds.draw}</h3>
+                      </div>
+
+                      <div className='bg-[#4a2547] border border-current text-center  px-5 rounded-lg py-2'>
+                        <h3 className='sm:font-base text-[#927c91]'>2</h3>
+                        <h3 className='sm:font-base text-white'>{game.odds.team2}</h3>
+                      </div>
+                      
+
+                    </div>
+
                 </div>
-                <div className='bg-add w-full h-10 px-2 py-1 text-white'>
-                  <h3>Match Winner</h3>
-                </div>
-                <div className='p-2 pb-6 rounded-md overflow-hidden bg-guy grid grid-cols-3 gap-2'>
-                  <button className='mt-2 shadow-md w-full bg-opacity-60 text-white py-2 rounded-md bg-fm'>
-                    <p>1</p>
-                    <p>{game.odds.team1}</p>
-                  </button>
-                  <button className='mt-2 shadow-md w-full bg-opacity-60 text-white py-2 rounded-md bg-fm'>
-                    <p>X</p>
-                    <p>{game.odds.draw}</p>
-                  </button>
-                  <button className='mt-2 shadow-md w-full bg-opacity-60 text-white py-2 rounded-md bg-fm'>
-                    <p>2</p>
-                    <p>{game.odds.team2}</p>
-                  </button>
-                </div>
-              </a>
-              </div>
+              </section>
              
             ))}
           </div>
