@@ -1,25 +1,55 @@
-import Layout from './dashboard/layout'; // Assuming you have a shared Layout component
-import React from 'react';
+import Image from "next/image";
+import Link from "next/link";
+import { useState, useEffect } from "react";
+import Layout from "../../layout";
+import { useRouter } from "next/router";
 
-export default function Par() {
+
+
+
+const FootBallDetailsPage = () => {
+
+    
+     
+     const router = useRouter()
+     const { id } = router.query
+     const [game, setGame] = useState(null);
+
+
+     useEffect(() => {
+          id && getFootBallDetail()
+     }, [id])
+
+
+     const getFootBallDetail = async () => {
+          
+        //   const docRef = doc(db, "testing", id);
+        //   const gameDetails = await getDoc(docRef);
+
+        //   setBlog(gameDetails.data());
+     };
+
   return (
     <Layout>
-      <div className='h-screen hidden md:flex flex-row bg-back p-6'>
-        {/* Main content with cards and table */}
-        <div className='w-3/4 mt-0'>
+    <div className='h-screen hidden md:flex flex-row bg-back p-6'>
+
+       {/* Main content with cards and table */}
+       <div className='w-3/4 mt-0'>
+       <Link className="text-white" href="/dashboard/Football">{"< Back"}</Link>
+
           {/* Card 1 */}
           <div className='relative bg-cover bg-guy bg-center w-full max-w-2xl h-72 flex text-white rounded-md mt-4 overflow-hidden'>
             <div className='w-1/2 h-full p-4'>
               <div className='bg-guy w-full h-10 px-2 py-1 flex items-center gap-4'>
                 <div className='flex items-center'>
                   <img
-                    src='/images/Mancity.png'
+                    src={game?.team1.image}
                     alt='Profile'
                     className='w-6 h-6 rounded-full'
                   />
                   <p className='text-fuchsia-600 text-md mx-2'>vs</p>
                   <img
-                    src='/images/chelsea.png'
+                    src={game?.team2.image}
                     alt='Profile'
                     className='w-6 h-6 rounded-full'
                   />
@@ -41,7 +71,7 @@ export default function Par() {
                       fill='white'
                     ></path>
                   </svg>
-                  <p className='pr-2'>Oct 18</p>
+                  <p className='pr-2'>{game?.date}</p>
                 </div>
               </div>
               <div className='bg-guy'>
@@ -370,8 +400,10 @@ export default function Par() {
           </div>
         </div>
       </div>
-
-      
+        
+  
     </Layout>
   );
-}
+};
+
+export default FootBallDetailsPage;

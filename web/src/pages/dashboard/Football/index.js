@@ -98,6 +98,7 @@ export default function Football() {
           {/* Displaying upcoming games */}
           <div className=' overflow-x-auto no-scrollbar flex space-x-8 sm:grid sm:grid-cols-3 w-full'>
             {upcomingGames.map((game, id) => ( 
+              <Link href={`/dashboard/Football/game/${game.id}`}>
               <section  
               className=" my-6 mx-4 border border-slate-400 cursor-pointer rounded-lg bg-[#2f0a2f]  sm:w-[280px] text-white sm:h-[291px]"
               >
@@ -158,6 +159,7 @@ export default function Football() {
 
                 </div>
               </section>
+              </Link>
              
             ))}
           </div>
