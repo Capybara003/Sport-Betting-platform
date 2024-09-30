@@ -8,7 +8,7 @@ const HeroSection = () => {
         style={{ backgroundImage: "url('images/image 4.png')" }}
       >
         <div className="text-center pt-60 text-3xl text-white font-bold">
-          <h1>SOLBET</h1>
+          <h1>HotOdds</h1>
         </div>
         <div className="text-center text-4xl text-white font-bold">
           <h1>
@@ -16,7 +16,7 @@ const HeroSection = () => {
           </h1>
         </div>
         <div className="text-center  px-10 md:px-56 pt-2 text-white font-bold">
-          Join the revolution in betting and experience a platform where innovation meets reliability. Sign up for SolBet today and place your bets in a secure, fast, and decentralized environment.
+          Join the revolution in betting and experience a platform where innovation meets reliability. Sign up for HotOdds today and place your bets in a secure, fast, and decentralized environment.
         </div>
 
         {/* Centering the buttons and image */}
