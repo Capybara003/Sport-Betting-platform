@@ -32,7 +32,7 @@ const Features = () => {
          {/* Description */}
 <div className="text-start mt-2 mb-8 text-white mx-4 md:mx-8 lg:mx-16 xl:mx-32">
   <h1 className="text-xl md:text-2xl  plg:text-3xl font-bold">
-    Place Your Bets Live: Real-Time Betting with SolBet
+    Place Your Bets Live: Real-Time Betting with HotOdds
   </h1>
 </div>
 

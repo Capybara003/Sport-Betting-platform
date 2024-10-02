@@ -15,7 +15,7 @@ const AboutUs = () => {
               {
                 title: 'Decentralization',
                 description:
-                  'SolBet leverages the Solana blockchain to offer a decentralized betting platform, ensuring no central authority controls the operations.',
+                  'HotOdds leverages the Solana blockchain to offer a decentralized betting platform, ensuring no central authority controls the operations.',
                 image: 'images/a.png',
               },
               {
