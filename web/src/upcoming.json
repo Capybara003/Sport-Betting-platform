@@ -1,0 +1,3514 @@
+[
+    {
+        "id": "d0f3e93acfa1c97d5e8a27edae395861",
+        "sport_key": "soccer_uefa_champs_league",
+        "sport_title": "UEFA Champions League",
+        "commence_time": "2024-10-01T16:45:00Z",
+        "home_team": "Salzburg",
+        "away_team": "Brest",
+        "bookmakers": [
+            {
+                "key": "betfair_ex_au",
+                "title": "Betfair",
+                "last_update": "2024-10-01T17:06:36Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:36Z",
+                        "outcomes": [
+                            {
+                                "name": "Brest",
+                                "price": 4.7
+                            },
+                            {
+                                "name": "Salzburg",
+                                "price": 2.04
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.35
+                            }
+                        ]
+                    },
+                    {
+                        "key": "h2h_lay",
+                        "last_update": "2024-10-01T17:06:36Z",
+                        "outcomes": [
+                            {
+                                "name": "Brest",
+                                "price": 4.8
+                            },
+                            {
+                                "name": "Salzburg",
+                                "price": 2.06
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tab",
+                "title": "TAB",
+                "last_update": "2024-10-01T17:06:36Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:36Z",
+                        "outcomes": [
+                            {
+                                "name": "Brest",
+                                "price": 4.0
+                            },
+                            {
+                                "name": "Salzburg",
+                                "price": 1.95
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.15
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betr_au",
+                "title": "Betr",
+                "last_update": "2024-10-01T17:06:34Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:34Z",
+                        "outcomes": [
+                            {
+                                "name": "Brest",
+                                "price": 4.0
+                            },
+                            {
+                                "name": "Salzburg",
+                                "price": 1.91
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.2
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "unibet",
+                "title": "Unibet",
+                "last_update": "2024-10-01T17:06:32Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:32Z",
+                        "outcomes": [
+                            {
+                                "name": "Brest",
+                                "price": 4.4
+                            },
+                            {
+                                "name": "Salzburg",
+                                "price": 1.92
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.2
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tabtouch",
+                "title": "TABtouch",
+                "last_update": "2024-10-01T17:06:34Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:34Z",
+                        "outcomes": [
+                            {
+                                "name": "Brest",
+                                "price": 4.25
+                            },
+                            {
+                                "name": "Salzburg",
+                                "price": 1.92
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.15
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "pointsbetau",
+                "title": "PointsBet (AU)",
+                "last_update": "2024-10-01T17:06:33Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:33Z",
+                        "outcomes": [
+                            {
+                                "name": "Brest",
+                                "price": 4.1
+                            },
+                            {
+                                "name": "Salzburg",
+                                "price": 2.05
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.2
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "725fa39d3fdbb108b7eaff19a53d09cd",
+        "sport_key": "soccer_uefa_champs_league",
+        "sport_title": "UEFA Champions League",
+        "commence_time": "2024-10-01T16:45:00Z",
+        "home_team": "VfB Stuttgart",
+        "away_team": "Sparta Prague",
+        "bookmakers": [
+            {
+                "key": "betr_au",
+                "title": "Betr",
+                "last_update": "2024-10-01T17:06:34Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:34Z",
+                        "outcomes": [
+                            {
+                                "name": "Sparta Prague",
+                                "price": 13.0
+                            },
+                            {
+                                "name": "VfB Stuttgart",
+                                "price": 1.18
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 6.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betfair_ex_au",
+                "title": "Betfair",
+                "last_update": "2024-10-01T17:06:36Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:36Z",
+                        "outcomes": [
+                            {
+                                "name": "Sparta Prague",
+                                "price": 18.0
+                            },
+                            {
+                                "name": "VfB Stuttgart",
+                                "price": 1.23
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 7.2
+                            }
+                        ]
+                    },
+                    {
+                        "key": "h2h_lay",
+                        "last_update": "2024-10-01T17:06:36Z",
+                        "outcomes": [
+                            {
+                                "name": "Sparta Prague",
+                                "price": 19.0
+                            },
+                            {
+                                "name": "VfB Stuttgart",
+                                "price": 1.24
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 7.6
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tab",
+                "title": "TAB",
+                "last_update": "2024-10-01T17:06:36Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:36Z",
+                        "outcomes": [
+                            {
+                                "name": "Sparta Prague",
+                                "price": 13.0
+                            },
+                            {
+                                "name": "VfB Stuttgart",
+                                "price": 1.2
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 6.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "unibet",
+                "title": "Unibet",
+                "last_update": "2024-10-01T17:06:32Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:32Z",
+                        "outcomes": [
+                            {
+                                "name": "Sparta Prague",
+                                "price": 14.0
+                            },
+                            {
+                                "name": "VfB Stuttgart",
+                                "price": 1.2
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 6.4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tabtouch",
+                "title": "TABtouch",
+                "last_update": "2024-10-01T17:06:34Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:34Z",
+                        "outcomes": [
+                            {
+                                "name": "Sparta Prague",
+                                "price": 13.0
+                            },
+                            {
+                                "name": "VfB Stuttgart",
+                                "price": 1.2
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 6.1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "pointsbetau",
+                "title": "PointsBet (AU)",
+                "last_update": "2024-10-01T17:06:33Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:33Z",
+                        "outcomes": [
+                            {
+                                "name": "Sparta Prague",
+                                "price": 14.0
+                            },
+                            {
+                                "name": "VfB Stuttgart",
+                                "price": 1.2
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 7.0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "586e2c211eca51aca0df62a4db91f43b",
+        "sport_key": "icehockey_sweden_hockey_league",
+        "sport_title": "SHL",
+        "commence_time": "2024-10-01T17:00:00Z",
+        "home_team": "Färjestad BK",
+        "away_team": "Brynäs IF",
+        "bookmakers": [
+            {
+                "key": "unibet",
+                "title": "Unibet",
+                "last_update": "2024-10-01T17:05:39Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:39Z",
+                        "outcomes": [
+                            {
+                                "name": "Brynäs IF",
+                                "price": 4.9
+                            },
+                            {
+                                "name": "Färjestad BK",
+                                "price": 1.55
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 4.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tabtouch",
+                "title": "TABtouch",
+                "last_update": "2024-10-01T17:05:41Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:41Z",
+                        "outcomes": [
+                            {
+                                "name": "Brynäs IF",
+                                "price": 4.7
+                            },
+                            {
+                                "name": "Färjestad BK",
+                                "price": 1.55
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 4.35
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betfair_ex_au",
+                "title": "Betfair",
+                "last_update": "2024-10-01T17:05:41Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:41Z",
+                        "outcomes": [
+                            {
+                                "name": "Brynäs IF",
+                                "price": 3.35
+                            },
+                            {
+                                "name": "Färjestad BK",
+                                "price": 1.32
+                            }
+                        ]
+                    },
+                    {
+                        "key": "h2h_lay",
+                        "last_update": "2024-10-01T17:05:41Z",
+                        "outcomes": [
+                            {
+                                "name": "Brynäs IF",
+                                "price": 4.2
+                            },
+                            {
+                                "name": "Färjestad BK",
+                                "price": 1.43
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "neds",
+                "title": "Neds",
+                "last_update": "2024-10-01T16:58:51Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T16:58:51Z",
+                        "outcomes": [
+                            {
+                                "name": "Brynäs IF",
+                                "price": 3.1
+                            },
+                            {
+                                "name": "Färjestad BK",
+                                "price": 1.33
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "ladbrokes_au",
+                "title": "Ladbrokes",
+                "last_update": "2024-10-01T16:58:52Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T16:58:52Z",
+                        "outcomes": [
+                            {
+                                "name": "Brynäs IF",
+                                "price": 3.1
+                            },
+                            {
+                                "name": "Färjestad BK",
+                                "price": 1.33
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "3f0ee22d3f7270e6be8953139fc7f347",
+        "sport_key": "icehockey_sweden_hockey_league",
+        "sport_title": "SHL",
+        "commence_time": "2024-10-01T17:00:00Z",
+        "home_team": "Frölunda HC",
+        "away_team": "Örebro HK",
+        "bookmakers": [
+            {
+                "key": "unibet",
+                "title": "Unibet",
+                "last_update": "2024-10-01T17:05:39Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:39Z",
+                        "outcomes": [
+                            {
+                                "name": "Frölunda HC",
+                                "price": 1.53
+                            },
+                            {
+                                "name": "Örebro HK",
+                                "price": 5.1
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 4.4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tabtouch",
+                "title": "TABtouch",
+                "last_update": "2024-10-01T17:05:41Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:41Z",
+                        "outcomes": [
+                            {
+                                "name": "Frölunda HC",
+                                "price": 1.53
+                            },
+                            {
+                                "name": "Örebro HK",
+                                "price": 4.9
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 4.3
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betfair_ex_au",
+                "title": "Betfair",
+                "last_update": "2024-10-01T17:05:41Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:41Z",
+                        "outcomes": [
+                            {
+                                "name": "Frölunda HC",
+                                "price": 1.28
+                            },
+                            {
+                                "name": "Örebro HK",
+                                "price": 3.6
+                            }
+                        ]
+                    },
+                    {
+                        "key": "h2h_lay",
+                        "last_update": "2024-10-01T17:05:41Z",
+                        "outcomes": [
+                            {
+                                "name": "Frölunda HC",
+                                "price": 1.39
+                            },
+                            {
+                                "name": "Örebro HK",
+                                "price": 4.6
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "neds",
+                "title": "Neds",
+                "last_update": "2024-10-01T16:58:51Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T16:58:51Z",
+                        "outcomes": [
+                            {
+                                "name": "Frölunda HC",
+                                "price": 1.3
+                            },
+                            {
+                                "name": "Örebro HK",
+                                "price": 3.25
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "ladbrokes_au",
+                "title": "Ladbrokes",
+                "last_update": "2024-10-01T16:58:52Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T16:58:52Z",
+                        "outcomes": [
+                            {
+                                "name": "Frölunda HC",
+                                "price": 1.3
+                            },
+                            {
+                                "name": "Örebro HK",
+                                "price": 3.25
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "bfcc865431fb90966693b168d36eeb3b",
+        "sport_key": "icehockey_sweden_hockey_league",
+        "sport_title": "SHL",
+        "commence_time": "2024-10-01T17:00:00Z",
+        "home_team": "HV71",
+        "away_team": "Modo Hockey",
+        "bookmakers": [
+            {
+                "key": "unibet",
+                "title": "Unibet",
+                "last_update": "2024-10-01T17:05:39Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:39Z",
+                        "outcomes": [
+                            {
+                                "name": "HV71",
+                                "price": 2.04
+                            },
+                            {
+                                "name": "Modo Hockey",
+                                "price": 3.0
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 4.0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tabtouch",
+                "title": "TABtouch",
+                "last_update": "2024-10-01T17:05:41Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:41Z",
+                        "outcomes": [
+                            {
+                                "name": "HV71",
+                                "price": 2.04
+                            },
+                            {
+                                "name": "Modo Hockey",
+                                "price": 2.95
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.9
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betfair_ex_au",
+                "title": "Betfair",
+                "last_update": "2024-10-01T17:05:41Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:41Z",
+                        "outcomes": [
+                            {
+                                "name": "HV71",
+                                "price": 1.73
+                            },
+                            {
+                                "name": "Modo Hockey",
+                                "price": 2.16
+                            }
+                        ]
+                    },
+                    {
+                        "key": "h2h_lay",
+                        "last_update": "2024-10-01T17:05:41Z",
+                        "outcomes": [
+                            {
+                                "name": "HV71",
+                                "price": 1.87
+                            },
+                            {
+                                "name": "Modo Hockey",
+                                "price": 2.38
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "neds",
+                "title": "Neds",
+                "last_update": "2024-10-01T16:58:51Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T16:58:51Z",
+                        "outcomes": [
+                            {
+                                "name": "HV71",
+                                "price": 1.6
+                            },
+                            {
+                                "name": "Modo Hockey",
+                                "price": 2.2
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "ladbrokes_au",
+                "title": "Ladbrokes",
+                "last_update": "2024-10-01T16:58:52Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T16:58:52Z",
+                        "outcomes": [
+                            {
+                                "name": "HV71",
+                                "price": 1.6
+                            },
+                            {
+                                "name": "Modo Hockey",
+                                "price": 2.2
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "fd03b72a3f2daf01ac5e174e288e65a0",
+        "sport_key": "icehockey_sweden_hockey_league",
+        "sport_title": "SHL",
+        "commence_time": "2024-10-01T17:00:00Z",
+        "home_team": "Leksands IF",
+        "away_team": "Timrå IK",
+        "bookmakers": [
+            {
+                "key": "unibet",
+                "title": "Unibet",
+                "last_update": "2024-10-01T17:05:39Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:39Z",
+                        "outcomes": [
+                            {
+                                "name": "Leksands IF",
+                                "price": 2.12
+                            },
+                            {
+                                "name": "Timrå IK",
+                                "price": 2.9
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.9
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tabtouch",
+                "title": "TABtouch",
+                "last_update": "2024-10-01T17:05:41Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:41Z",
+                        "outcomes": [
+                            {
+                                "name": "Leksands IF",
+                                "price": 2.12
+                            },
+                            {
+                                "name": "Timrå IK",
+                                "price": 2.85
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.8
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betfair_ex_au",
+                "title": "Betfair",
+                "last_update": "2024-10-01T17:04:13Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:04:13Z",
+                        "outcomes": [
+                            {
+                                "name": "Leksands IF",
+                                "price": 1.72
+                            },
+                            {
+                                "name": "Timrå IK",
+                                "price": 2.16
+                            }
+                        ]
+                    },
+                    {
+                        "key": "h2h_lay",
+                        "last_update": "2024-10-01T17:04:13Z",
+                        "outcomes": [
+                            {
+                                "name": "Leksands IF",
+                                "price": 1.87
+                            },
+                            {
+                                "name": "Timrå IK",
+                                "price": 2.4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "ladbrokes_au",
+                "title": "Ladbrokes",
+                "last_update": "2024-10-01T16:58:52Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T16:58:52Z",
+                        "outcomes": [
+                            {
+                                "name": "Leksands IF",
+                                "price": 1.67
+                            },
+                            {
+                                "name": "Timrå IK",
+                                "price": 2.1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "neds",
+                "title": "Neds",
+                "last_update": "2024-10-01T16:58:51Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T16:58:51Z",
+                        "outcomes": [
+                            {
+                                "name": "Leksands IF",
+                                "price": 1.67
+                            },
+                            {
+                                "name": "Timrå IK",
+                                "price": 2.1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "d9d21681d0aec4464ae0a9d753f2e05a",
+        "sport_key": "icehockey_sweden_hockey_league",
+        "sport_title": "SHL",
+        "commence_time": "2024-10-01T17:00:00Z",
+        "home_team": "Växjö Lakers",
+        "away_team": "Linköping HC",
+        "bookmakers": [
+            {
+                "key": "unibet",
+                "title": "Unibet",
+                "last_update": "2024-10-01T17:05:39Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:39Z",
+                        "outcomes": [
+                            {
+                                "name": "Linköping HC",
+                                "price": 5.2
+                            },
+                            {
+                                "name": "Växjö Lakers",
+                                "price": 1.51
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 4.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tabtouch",
+                "title": "TABtouch",
+                "last_update": "2024-10-01T17:05:41Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:41Z",
+                        "outcomes": [
+                            {
+                                "name": "Linköping HC",
+                                "price": 5.0
+                            },
+                            {
+                                "name": "Växjö Lakers",
+                                "price": 1.51
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 4.35
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betfair_ex_au",
+                "title": "Betfair",
+                "last_update": "2024-10-01T17:05:41Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:41Z",
+                        "outcomes": [
+                            {
+                                "name": "Linköping HC",
+                                "price": 2.34
+                            },
+                            {
+                                "name": "Växjö Lakers",
+                                "price": 1.62
+                            }
+                        ]
+                    },
+                    {
+                        "key": "h2h_lay",
+                        "last_update": "2024-10-01T17:05:41Z",
+                        "outcomes": [
+                            {
+                                "name": "Linköping HC",
+                                "price": 2.62
+                            },
+                            {
+                                "name": "Växjö Lakers",
+                                "price": 1.75
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "neds",
+                "title": "Neds",
+                "last_update": "2024-10-01T16:58:51Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T16:58:51Z",
+                        "outcomes": [
+                            {
+                                "name": "Linköping HC",
+                                "price": 2.15
+                            },
+                            {
+                                "name": "Växjö Lakers",
+                                "price": 1.65
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "ladbrokes_au",
+                "title": "Ladbrokes",
+                "last_update": "2024-10-01T16:58:52Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T16:58:52Z",
+                        "outcomes": [
+                            {
+                                "name": "Linköping HC",
+                                "price": 2.15
+                            },
+                            {
+                                "name": "Växjö Lakers",
+                                "price": 1.65
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "206f767755ec44a4c9d008c0db87d0fc",
+        "sport_key": "icehockey_sweden_hockey_league",
+        "sport_title": "SHL",
+        "commence_time": "2024-10-01T17:01:00Z",
+        "home_team": "Luleå HF",
+        "away_team": "Skellefteå AIK",
+        "bookmakers": [
+            {
+                "key": "unibet",
+                "title": "Unibet",
+                "last_update": "2024-10-01T17:05:39Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:39Z",
+                        "outcomes": [
+                            {
+                                "name": "Luleå HF",
+                                "price": 1.61
+                            },
+                            {
+                                "name": "Skellefteå AIK",
+                                "price": 4.6
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 4.3
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tabtouch",
+                "title": "TABtouch",
+                "last_update": "2024-10-01T17:05:41Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:41Z",
+                        "outcomes": [
+                            {
+                                "name": "Luleå HF",
+                                "price": 1.61
+                            },
+                            {
+                                "name": "Skellefteå AIK",
+                                "price": 4.4
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 4.2
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betfair_ex_au",
+                "title": "Betfair",
+                "last_update": "2024-10-01T17:05:41Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:41Z",
+                        "outcomes": [
+                            {
+                                "name": "Luleå HF",
+                                "price": 1.3
+                            },
+                            {
+                                "name": "Skellefteå AIK",
+                                "price": 3.45
+                            }
+                        ]
+                    },
+                    {
+                        "key": "h2h_lay",
+                        "last_update": "2024-10-01T17:05:41Z",
+                        "outcomes": [
+                            {
+                                "name": "Luleå HF",
+                                "price": 1.41
+                            },
+                            {
+                                "name": "Skellefteå AIK",
+                                "price": 4.4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "neds",
+                "title": "Neds",
+                "last_update": "2024-10-01T16:58:51Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T16:58:51Z",
+                        "outcomes": [
+                            {
+                                "name": "Luleå HF",
+                                "price": 1.7
+                            },
+                            {
+                                "name": "Skellefteå AIK",
+                                "price": 2.05
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "ladbrokes_au",
+                "title": "Ladbrokes",
+                "last_update": "2024-10-01T16:58:52Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T16:58:52Z",
+                        "outcomes": [
+                            {
+                                "name": "Luleå HF",
+                                "price": 1.7
+                            },
+                            {
+                                "name": "Skellefteå AIK",
+                                "price": 2.05
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "93d3614e0356fff5a3ff070b93177256",
+        "sport_key": "icehockey_sweden_hockey_league",
+        "sport_title": "SHL",
+        "commence_time": "2024-10-01T17:01:00Z",
+        "home_team": "Rögle BK",
+        "away_team": "Malmö Redhawks",
+        "bookmakers": [
+            {
+                "key": "unibet",
+                "title": "Unibet",
+                "last_update": "2024-10-01T17:05:39Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:39Z",
+                        "outcomes": [
+                            {
+                                "name": "Malmö Redhawks",
+                                "price": 3.75
+                            },
+                            {
+                                "name": "Rögle BK",
+                                "price": 1.79
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 4.0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tabtouch",
+                "title": "TABtouch",
+                "last_update": "2024-10-01T17:05:41Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:41Z",
+                        "outcomes": [
+                            {
+                                "name": "Malmö Redhawks",
+                                "price": 3.65
+                            },
+                            {
+                                "name": "Rögle BK",
+                                "price": 1.79
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.9
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betfair_ex_au",
+                "title": "Betfair",
+                "last_update": "2024-10-01T17:05:41Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:41Z",
+                        "outcomes": [
+                            {
+                                "name": "Malmö Redhawks",
+                                "price": 2.7
+                            },
+                            {
+                                "name": "Rögle BK",
+                                "price": 1.49
+                            }
+                        ]
+                    },
+                    {
+                        "key": "h2h_lay",
+                        "last_update": "2024-10-01T17:05:41Z",
+                        "outcomes": [
+                            {
+                                "name": "Malmö Redhawks",
+                                "price": 3.05
+                            },
+                            {
+                                "name": "Rögle BK",
+                                "price": 1.59
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "neds",
+                "title": "Neds",
+                "last_update": "2024-10-01T16:58:51Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T16:58:51Z",
+                        "outcomes": [
+                            {
+                                "name": "Malmö Redhawks",
+                                "price": 2.45
+                            },
+                            {
+                                "name": "Rögle BK",
+                                "price": 1.48
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "ladbrokes_au",
+                "title": "Ladbrokes",
+                "last_update": "2024-10-01T16:58:52Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T16:58:52Z",
+                        "outcomes": [
+                            {
+                                "name": "Malmö Redhawks",
+                                "price": 2.45
+                            },
+                            {
+                                "name": "Rögle BK",
+                                "price": 1.48
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "bd5db14c1b7b06b3668aa93aa6b4834e",
+        "sport_key": "baseball_mlb",
+        "sport_title": "MLB",
+        "commence_time": "2024-10-01T18:32:00Z",
+        "home_team": "Houston Astros",
+        "away_team": "Detroit Tigers",
+        "bookmakers": [
+            {
+                "key": "sportsbet",
+                "title": "SportsBet",
+                "last_update": "2024-10-01T17:05:24Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:24Z",
+                        "outcomes": [
+                            {
+                                "name": "Detroit Tigers",
+                                "price": 2.18
+                            },
+                            {
+                                "name": "Houston Astros",
+                                "price": 1.69
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "neds",
+                "title": "Neds",
+                "last_update": "2024-10-01T17:05:24Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:24Z",
+                        "outcomes": [
+                            {
+                                "name": "Detroit Tigers",
+                                "price": 2.25
+                            },
+                            {
+                                "name": "Houston Astros",
+                                "price": 1.65
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "ladbrokes_au",
+                "title": "Ladbrokes",
+                "last_update": "2024-10-01T17:05:25Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:25Z",
+                        "outcomes": [
+                            {
+                                "name": "Detroit Tigers",
+                                "price": 2.25
+                            },
+                            {
+                                "name": "Houston Astros",
+                                "price": 1.65
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betr_au",
+                "title": "Betr",
+                "last_update": "2024-10-01T17:05:25Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:25Z",
+                        "outcomes": [
+                            {
+                                "name": "Detroit Tigers",
+                                "price": 2.2
+                            },
+                            {
+                                "name": "Houston Astros",
+                                "price": 1.68
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betright",
+                "title": "Bet Right",
+                "last_update": "2024-10-01T17:05:25Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:25Z",
+                        "outcomes": [
+                            {
+                                "name": "Detroit Tigers",
+                                "price": 2.2
+                            },
+                            {
+                                "name": "Houston Astros",
+                                "price": 1.7
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "pointsbetau",
+                "title": "PointsBet (AU)",
+                "last_update": "2024-10-01T17:05:24Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:24Z",
+                        "outcomes": [
+                            {
+                                "name": "Detroit Tigers",
+                                "price": 2.25
+                            },
+                            {
+                                "name": "Houston Astros",
+                                "price": 1.69
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "playup",
+                "title": "PlayUp",
+                "last_update": "2024-10-01T17:05:24Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:24Z",
+                        "outcomes": [
+                            {
+                                "name": "Detroit Tigers",
+                                "price": 2.2
+                            },
+                            {
+                                "name": "Houston Astros",
+                                "price": 1.68
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "topsport",
+                "title": "TopSport",
+                "last_update": "2024-10-01T17:05:25Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:25Z",
+                        "outcomes": [
+                            {
+                                "name": "Detroit Tigers",
+                                "price": 2.18
+                            },
+                            {
+                                "name": "Houston Astros",
+                                "price": 1.68
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tab",
+                "title": "TAB",
+                "last_update": "2024-10-01T17:05:24Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:24Z",
+                        "outcomes": [
+                            {
+                                "name": "Detroit Tigers",
+                                "price": 2.2
+                            },
+                            {
+                                "name": "Houston Astros",
+                                "price": 1.7
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "unibet",
+                "title": "Unibet",
+                "last_update": "2024-10-01T17:05:24Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:24Z",
+                        "outcomes": [
+                            {
+                                "name": "Detroit Tigers",
+                                "price": 2.2
+                            },
+                            {
+                                "name": "Houston Astros",
+                                "price": 1.68
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tabtouch",
+                "title": "TABtouch",
+                "last_update": "2024-10-01T17:05:25Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:25Z",
+                        "outcomes": [
+                            {
+                                "name": "Detroit Tigers",
+                                "price": 2.2
+                            },
+                            {
+                                "name": "Houston Astros",
+                                "price": 1.7
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betfair_ex_au",
+                "title": "Betfair",
+                "last_update": "2024-10-01T17:05:27Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:05:27Z",
+                        "outcomes": [
+                            {
+                                "name": "Detroit Tigers",
+                                "price": 2.28
+                            },
+                            {
+                                "name": "Houston Astros",
+                                "price": 1.76
+                            }
+                        ]
+                    },
+                    {
+                        "key": "h2h_lay",
+                        "last_update": "2024-10-01T17:05:27Z",
+                        "outcomes": [
+                            {
+                                "name": "Detroit Tigers",
+                                "price": 2.32
+                            },
+                            {
+                                "name": "Houston Astros",
+                                "price": 1.78
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "703942efe08d03da23039a9596f6c5b1",
+        "sport_key": "soccer_england_league2",
+        "sport_title": "League 2",
+        "commence_time": "2024-10-01T18:45:00Z",
+        "home_team": "Cheltenham Town",
+        "away_team": "Accrington Stanley",
+        "bookmakers": [
+            {
+                "key": "sportsbet",
+                "title": "SportsBet",
+                "last_update": "2024-10-01T17:06:21Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:21Z",
+                        "outcomes": [
+                            {
+                                "name": "Accrington Stanley",
+                                "price": 2.87
+                            },
+                            {
+                                "name": "Cheltenham Town",
+                                "price": 2.2
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betr_au",
+                "title": "Betr",
+                "last_update": "2024-10-01T17:06:21Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:21Z",
+                        "outcomes": [
+                            {
+                                "name": "Accrington Stanley",
+                                "price": 2.95
+                            },
+                            {
+                                "name": "Cheltenham Town",
+                                "price": 2.3
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.3
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betright",
+                "title": "Bet Right",
+                "last_update": "2024-10-01T17:06:21Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:21Z",
+                        "outcomes": [
+                            {
+                                "name": "Accrington Stanley",
+                                "price": 2.95
+                            },
+                            {
+                                "name": "Cheltenham Town",
+                                "price": 2.25
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.25
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "pointsbetau",
+                "title": "PointsBet (AU)",
+                "last_update": "2024-10-01T17:06:20Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:20Z",
+                        "outcomes": [
+                            {
+                                "name": "Accrington Stanley",
+                                "price": 3.0
+                            },
+                            {
+                                "name": "Cheltenham Town",
+                                "price": 2.3
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.3
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "playup",
+                "title": "PlayUp",
+                "last_update": "2024-10-01T17:06:20Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:20Z",
+                        "outcomes": [
+                            {
+                                "name": "Accrington Stanley",
+                                "price": 2.85
+                            },
+                            {
+                                "name": "Cheltenham Town",
+                                "price": 2.25
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.25
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betfair_ex_au",
+                "title": "Betfair",
+                "last_update": "2024-10-01T17:06:23Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:23Z",
+                        "outcomes": [
+                            {
+                                "name": "Accrington Stanley",
+                                "price": 3.15
+                            },
+                            {
+                                "name": "Cheltenham Town",
+                                "price": 2.44
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.5
+                            }
+                        ]
+                    },
+                    {
+                        "key": "h2h_lay",
+                        "last_update": "2024-10-01T17:06:23Z",
+                        "outcomes": [
+                            {
+                                "name": "Accrington Stanley",
+                                "price": 3.3
+                            },
+                            {
+                                "name": "Cheltenham Town",
+                                "price": 2.46
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.6
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "topsport",
+                "title": "TopSport",
+                "last_update": "2024-10-01T17:06:21Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:21Z",
+                        "outcomes": [
+                            {
+                                "name": "Accrington Stanley",
+                                "price": 2.94
+                            },
+                            {
+                                "name": "Cheltenham Town",
+                                "price": 2.28
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.3
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tab",
+                "title": "TAB",
+                "last_update": "2024-10-01T17:04:48Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:04:48Z",
+                        "outcomes": [
+                            {
+                                "name": "Accrington Stanley",
+                                "price": 2.9
+                            },
+                            {
+                                "name": "Cheltenham Town",
+                                "price": 2.25
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.25
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tabtouch",
+                "title": "TABtouch",
+                "last_update": "2024-10-01T17:06:21Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:21Z",
+                        "outcomes": [
+                            {
+                                "name": "Accrington Stanley",
+                                "price": 3.2
+                            },
+                            {
+                                "name": "Cheltenham Town",
+                                "price": 2.15
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "unibet",
+                "title": "Unibet",
+                "last_update": "2024-10-01T17:06:20Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:20Z",
+                        "outcomes": [
+                            {
+                                "name": "Accrington Stanley",
+                                "price": 3.2
+                            },
+                            {
+                                "name": "Cheltenham Town",
+                                "price": 2.15
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.4
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "b917da935b5c4370a42f345849c2009c",
+        "sport_key": "soccer_england_league1",
+        "sport_title": "League 1",
+        "commence_time": "2024-10-01T18:45:00Z",
+        "home_team": "Barnsley",
+        "away_team": "Wycombe Wanderers",
+        "bookmakers": [
+            {
+                "key": "playup",
+                "title": "PlayUp",
+                "last_update": "2024-10-01T17:06:10Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:10Z",
+                        "outcomes": [
+                            {
+                                "name": "Barnsley",
+                                "price": 2.2
+                            },
+                            {
+                                "name": "Wycombe Wanderers",
+                                "price": 3.0
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "unibet",
+                "title": "Unibet",
+                "last_update": "2024-10-01T17:06:11Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:11Z",
+                        "outcomes": [
+                            {
+                                "name": "Barnsley",
+                                "price": 2.2
+                            },
+                            {
+                                "name": "Wycombe Wanderers",
+                                "price": 3.25
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.35
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tabtouch",
+                "title": "TABtouch",
+                "last_update": "2024-10-01T17:06:12Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:12Z",
+                        "outcomes": [
+                            {
+                                "name": "Barnsley",
+                                "price": 2.17
+                            },
+                            {
+                                "name": "Wycombe Wanderers",
+                                "price": 3.2
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.3
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "topsport",
+                "title": "TopSport",
+                "last_update": "2024-10-01T17:06:12Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:12Z",
+                        "outcomes": [
+                            {
+                                "name": "Barnsley",
+                                "price": 2.18
+                            },
+                            {
+                                "name": "Wycombe Wanderers",
+                                "price": 3.05
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tab",
+                "title": "TAB",
+                "last_update": "2024-10-01T17:06:11Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:11Z",
+                        "outcomes": [
+                            {
+                                "name": "Barnsley",
+                                "price": 2.2
+                            },
+                            {
+                                "name": "Wycombe Wanderers",
+                                "price": 2.9
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "sportsbet",
+                "title": "SportsBet",
+                "last_update": "2024-10-01T17:06:11Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:11Z",
+                        "outcomes": [
+                            {
+                                "name": "Barnsley",
+                                "price": 2.2
+                            },
+                            {
+                                "name": "Wycombe Wanderers",
+                                "price": 3.1
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betfair_ex_au",
+                "title": "Betfair",
+                "last_update": "2024-10-01T17:06:14Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:14Z",
+                        "outcomes": [
+                            {
+                                "name": "Barnsley",
+                                "price": 2.3
+                            },
+                            {
+                                "name": "Wycombe Wanderers",
+                                "price": 3.25
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.6
+                            }
+                        ]
+                    },
+                    {
+                        "key": "h2h_lay",
+                        "last_update": "2024-10-01T17:06:14Z",
+                        "outcomes": [
+                            {
+                                "name": "Barnsley",
+                                "price": 2.38
+                            },
+                            {
+                                "name": "Wycombe Wanderers",
+                                "price": 3.4
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.75
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "pointsbetau",
+                "title": "PointsBet (AU)",
+                "last_update": "2024-10-01T17:06:11Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:11Z",
+                        "outcomes": [
+                            {
+                                "name": "Barnsley",
+                                "price": 2.2
+                            },
+                            {
+                                "name": "Wycombe Wanderers",
+                                "price": 3.1
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betright",
+                "title": "Bet Right",
+                "last_update": "2024-10-01T17:06:12Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:12Z",
+                        "outcomes": [
+                            {
+                                "name": "Barnsley",
+                                "price": 2.15
+                            },
+                            {
+                                "name": "Wycombe Wanderers",
+                                "price": 3.05
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.35
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betr_au",
+                "title": "Betr",
+                "last_update": "2024-10-01T17:06:12Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:12Z",
+                        "outcomes": [
+                            {
+                                "name": "Barnsley",
+                                "price": 2.15
+                            },
+                            {
+                                "name": "Wycombe Wanderers",
+                                "price": 3.1
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.4
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "251dd645fb2eaf4d1a6a32b7e18e9848",
+        "sport_key": "soccer_england_league2",
+        "sport_title": "League 2",
+        "commence_time": "2024-10-01T18:45:00Z",
+        "home_team": "Doncaster Rovers",
+        "away_team": "Barrow",
+        "bookmakers": [
+            {
+                "key": "playup",
+                "title": "PlayUp",
+                "last_update": "2024-10-01T17:06:20Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:20Z",
+                        "outcomes": [
+                            {
+                                "name": "Barrow",
+                                "price": 3.1
+                            },
+                            {
+                                "name": "Doncaster Rovers",
+                                "price": 2.15
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.2
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "pointsbetau",
+                "title": "PointsBet (AU)",
+                "last_update": "2024-10-01T17:06:20Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:20Z",
+                        "outcomes": [
+                            {
+                                "name": "Barrow",
+                                "price": 3.25
+                            },
+                            {
+                                "name": "Doncaster Rovers",
+                                "price": 2.2
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.25
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betright",
+                "title": "Bet Right",
+                "last_update": "2024-10-01T17:06:21Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:21Z",
+                        "outcomes": [
+                            {
+                                "name": "Barrow",
+                                "price": 3.15
+                            },
+                            {
+                                "name": "Doncaster Rovers",
+                                "price": 2.15
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.2
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "sportsbet",
+                "title": "SportsBet",
+                "last_update": "2024-10-01T17:06:21Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:21Z",
+                        "outcomes": [
+                            {
+                                "name": "Barrow",
+                                "price": 3.1
+                            },
+                            {
+                                "name": "Doncaster Rovers",
+                                "price": 2.1
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betfair_ex_au",
+                "title": "Betfair",
+                "last_update": "2024-10-01T17:06:23Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:23Z",
+                        "outcomes": [
+                            {
+                                "name": "Barrow",
+                                "price": 3.4
+                            },
+                            {
+                                "name": "Doncaster Rovers",
+                                "price": 2.3
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.5
+                            }
+                        ]
+                    },
+                    {
+                        "key": "h2h_lay",
+                        "last_update": "2024-10-01T17:06:23Z",
+                        "outcomes": [
+                            {
+                                "name": "Barrow",
+                                "price": 3.55
+                            },
+                            {
+                                "name": "Doncaster Rovers",
+                                "price": 2.32
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.6
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "topsport",
+                "title": "TopSport",
+                "last_update": "2024-10-01T17:06:21Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:21Z",
+                        "outcomes": [
+                            {
+                                "name": "Barrow",
+                                "price": 3.1
+                            },
+                            {
+                                "name": "Doncaster Rovers",
+                                "price": 2.2
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.3
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tab",
+                "title": "TAB",
+                "last_update": "2024-10-01T17:04:48Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:04:48Z",
+                        "outcomes": [
+                            {
+                                "name": "Barrow",
+                                "price": 3.1
+                            },
+                            {
+                                "name": "Doncaster Rovers",
+                                "price": 2.2
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.2
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tabtouch",
+                "title": "TABtouch",
+                "last_update": "2024-10-01T17:06:21Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:21Z",
+                        "outcomes": [
+                            {
+                                "name": "Barrow",
+                                "price": 3.5
+                            },
+                            {
+                                "name": "Doncaster Rovers",
+                                "price": 2.0
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "unibet",
+                "title": "Unibet",
+                "last_update": "2024-10-01T17:06:20Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:20Z",
+                        "outcomes": [
+                            {
+                                "name": "Barrow",
+                                "price": 3.5
+                            },
+                            {
+                                "name": "Doncaster Rovers",
+                                "price": 2.0
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betr_au",
+                "title": "Betr",
+                "last_update": "2024-10-01T17:06:21Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:21Z",
+                        "outcomes": [
+                            {
+                                "name": "Barrow",
+                                "price": 3.2
+                            },
+                            {
+                                "name": "Doncaster Rovers",
+                                "price": 2.2
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.2
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "e8278252f1b9461ea1a8f85abd726225",
+        "sport_key": "soccer_england_league1",
+        "sport_title": "League 1",
+        "commence_time": "2024-10-01T18:45:00Z",
+        "home_team": "Birmingham City",
+        "away_team": "Huddersfield Town",
+        "bookmakers": [
+            {
+                "key": "playup",
+                "title": "PlayUp",
+                "last_update": "2024-10-01T17:06:10Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:10Z",
+                        "outcomes": [
+                            {
+                                "name": "Birmingham City",
+                                "price": 1.63
+                            },
+                            {
+                                "name": "Huddersfield Town",
+                                "price": 4.85
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.85
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betr_au",
+                "title": "Betr",
+                "last_update": "2024-10-01T17:06:12Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:12Z",
+                        "outcomes": [
+                            {
+                                "name": "Birmingham City",
+                                "price": 1.62
+                            },
+                            {
+                                "name": "Huddersfield Town",
+                                "price": 4.9
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.8
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betright",
+                "title": "Bet Right",
+                "last_update": "2024-10-01T17:06:12Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:12Z",
+                        "outcomes": [
+                            {
+                                "name": "Birmingham City",
+                                "price": 1.62
+                            },
+                            {
+                                "name": "Huddersfield Town",
+                                "price": 4.9
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.75
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "unibet",
+                "title": "Unibet",
+                "last_update": "2024-10-01T17:06:11Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:11Z",
+                        "outcomes": [
+                            {
+                                "name": "Birmingham City",
+                                "price": 1.68
+                            },
+                            {
+                                "name": "Huddersfield Town",
+                                "price": 4.8
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.85
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tabtouch",
+                "title": "TABtouch",
+                "last_update": "2024-10-01T17:06:12Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:12Z",
+                        "outcomes": [
+                            {
+                                "name": "Birmingham City",
+                                "price": 1.66
+                            },
+                            {
+                                "name": "Huddersfield Town",
+                                "price": 4.75
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.8
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "sportsbet",
+                "title": "SportsBet",
+                "last_update": "2024-10-01T17:06:11Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:11Z",
+                        "outcomes": [
+                            {
+                                "name": "Birmingham City",
+                                "price": 1.61
+                            },
+                            {
+                                "name": "Huddersfield Town",
+                                "price": 5.0
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.8
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betfair_ex_au",
+                "title": "Betfair",
+                "last_update": "2024-10-01T17:06:14Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:14Z",
+                        "outcomes": [
+                            {
+                                "name": "Birmingham City",
+                                "price": 1.7
+                            },
+                            {
+                                "name": "Huddersfield Town",
+                                "price": 5.6
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 4.1
+                            }
+                        ]
+                    },
+                    {
+                        "key": "h2h_lay",
+                        "last_update": "2024-10-01T17:06:14Z",
+                        "outcomes": [
+                            {
+                                "name": "Birmingham City",
+                                "price": 1.71
+                            },
+                            {
+                                "name": "Huddersfield Town",
+                                "price": 5.8
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 4.3
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "topsport",
+                "title": "TopSport",
+                "last_update": "2024-10-01T17:06:12Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:12Z",
+                        "outcomes": [
+                            {
+                                "name": "Birmingham City",
+                                "price": 1.63
+                            },
+                            {
+                                "name": "Huddersfield Town",
+                                "price": 4.9
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.8
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tab",
+                "title": "TAB",
+                "last_update": "2024-10-01T17:06:11Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:11Z",
+                        "outcomes": [
+                            {
+                                "name": "Birmingham City",
+                                "price": 1.62
+                            },
+                            {
+                                "name": "Huddersfield Town",
+                                "price": 4.75
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.7
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "pointsbetau",
+                "title": "PointsBet (AU)",
+                "last_update": "2024-10-01T17:06:11Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:11Z",
+                        "outcomes": [
+                            {
+                                "name": "Birmingham City",
+                                "price": 1.65
+                            },
+                            {
+                                "name": "Huddersfield Town",
+                                "price": 5.0
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.8
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "0eaa7195d06ac35c22081a7d6865d403",
+        "sport_key": "soccer_efl_champ",
+        "sport_title": "Championship",
+        "commence_time": "2024-10-01T18:45:00Z",
+        "home_team": "Coventry City",
+        "away_team": "Blackburn Rovers",
+        "bookmakers": [
+            {
+                "key": "sportsbet",
+                "title": "SportsBet",
+                "last_update": "2024-10-01T17:06:22Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:22Z",
+                        "outcomes": [
+                            {
+                                "name": "Blackburn Rovers",
+                                "price": 3.3
+                            },
+                            {
+                                "name": "Coventry City",
+                                "price": 2.1
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.3
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betr_au",
+                "title": "Betr",
+                "last_update": "2024-10-01T17:06:23Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:23Z",
+                        "outcomes": [
+                            {
+                                "name": "Blackburn Rovers",
+                                "price": 3.2
+                            },
+                            {
+                                "name": "Coventry City",
+                                "price": 2.15
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betright",
+                "title": "Bet Right",
+                "last_update": "2024-10-01T17:06:23Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:23Z",
+                        "outcomes": [
+                            {
+                                "name": "Blackburn Rovers",
+                                "price": 3.2
+                            },
+                            {
+                                "name": "Coventry City",
+                                "price": 2.15
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.35
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betfair_ex_au",
+                "title": "Betfair",
+                "last_update": "2024-10-01T17:06:25Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:25Z",
+                        "outcomes": [
+                            {
+                                "name": "Blackburn Rovers",
+                                "price": 3.6
+                            },
+                            {
+                                "name": "Coventry City",
+                                "price": 2.26
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.55
+                            }
+                        ]
+                    },
+                    {
+                        "key": "h2h_lay",
+                        "last_update": "2024-10-01T17:06:25Z",
+                        "outcomes": [
+                            {
+                                "name": "Blackburn Rovers",
+                                "price": 3.65
+                            },
+                            {
+                                "name": "Coventry City",
+                                "price": 2.28
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.6
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tabtouch",
+                "title": "TABtouch",
+                "last_update": "2024-10-01T17:06:23Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:23Z",
+                        "outcomes": [
+                            {
+                                "name": "Blackburn Rovers",
+                                "price": 3.5
+                            },
+                            {
+                                "name": "Coventry City",
+                                "price": 2.02
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "unibet",
+                "title": "Unibet",
+                "last_update": "2024-10-01T17:06:21Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:21Z",
+                        "outcomes": [
+                            {
+                                "name": "Blackburn Rovers",
+                                "price": 3.5
+                            },
+                            {
+                                "name": "Coventry City",
+                                "price": 2.02
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "playup",
+                "title": "PlayUp",
+                "last_update": "2024-10-01T17:06:21Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:21Z",
+                        "outcomes": [
+                            {
+                                "name": "Blackburn Rovers",
+                                "price": 3.15
+                            },
+                            {
+                                "name": "Coventry City",
+                                "price": 2.15
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.35
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "topsport",
+                "title": "TopSport",
+                "last_update": "2024-10-01T17:06:24Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:24Z",
+                        "outcomes": [
+                            {
+                                "name": "Blackburn Rovers",
+                                "price": 3.2
+                            },
+                            {
+                                "name": "Coventry City",
+                                "price": 2.17
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tab",
+                "title": "TAB",
+                "last_update": "2024-10-01T17:06:22Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:22Z",
+                        "outcomes": [
+                            {
+                                "name": "Blackburn Rovers",
+                                "price": 3.2
+                            },
+                            {
+                                "name": "Coventry City",
+                                "price": 2.15
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.4
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ba55e66fa1f123447ecf7c67e9c4863a",
+        "sport_key": "soccer_england_league1",
+        "sport_title": "League 1",
+        "commence_time": "2024-10-01T18:45:00Z",
+        "home_team": "Blackpool",
+        "away_team": "Lincoln City",
+        "bookmakers": [
+            {
+                "key": "playup",
+                "title": "PlayUp",
+                "last_update": "2024-10-01T17:06:10Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:10Z",
+                        "outcomes": [
+                            {
+                                "name": "Blackpool",
+                                "price": 1.87
+                            },
+                            {
+                                "name": "Lincoln City",
+                                "price": 3.85
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "sportsbet",
+                "title": "SportsBet",
+                "last_update": "2024-10-01T17:06:11Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:11Z",
+                        "outcomes": [
+                            {
+                                "name": "Blackpool",
+                                "price": 1.85
+                            },
+                            {
+                                "name": "Lincoln City",
+                                "price": 4.1
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betr_au",
+                "title": "Betr",
+                "last_update": "2024-10-01T17:06:12Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:12Z",
+                        "outcomes": [
+                            {
+                                "name": "Blackpool",
+                                "price": 1.88
+                            },
+                            {
+                                "name": "Lincoln City",
+                                "price": 4.0
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betright",
+                "title": "Bet Right",
+                "last_update": "2024-10-01T17:06:12Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:12Z",
+                        "outcomes": [
+                            {
+                                "name": "Blackpool",
+                                "price": 1.85
+                            },
+                            {
+                                "name": "Lincoln City",
+                                "price": 4.0
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.35
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "pointsbetau",
+                "title": "PointsBet (AU)",
+                "last_update": "2024-10-01T17:06:11Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:11Z",
+                        "outcomes": [
+                            {
+                                "name": "Blackpool",
+                                "price": 1.87
+                            },
+                            {
+                                "name": "Lincoln City",
+                                "price": 4.25
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betfair_ex_au",
+                "title": "Betfair",
+                "last_update": "2024-10-01T17:06:14Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:14Z",
+                        "outcomes": [
+                            {
+                                "name": "Blackpool",
+                                "price": 1.94
+                            },
+                            {
+                                "name": "Lincoln City",
+                                "price": 4.3
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.65
+                            }
+                        ]
+                    },
+                    {
+                        "key": "h2h_lay",
+                        "last_update": "2024-10-01T17:06:14Z",
+                        "outcomes": [
+                            {
+                                "name": "Blackpool",
+                                "price": 2.0
+                            },
+                            {
+                                "name": "Lincoln City",
+                                "price": 4.6
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.85
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "unibet",
+                "title": "Unibet",
+                "last_update": "2024-10-01T17:06:11Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:11Z",
+                        "outcomes": [
+                            {
+                                "name": "Blackpool",
+                                "price": 1.83
+                            },
+                            {
+                                "name": "Lincoln City",
+                                "price": 4.2
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.6
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tabtouch",
+                "title": "TABtouch",
+                "last_update": "2024-10-01T17:06:12Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:12Z",
+                        "outcomes": [
+                            {
+                                "name": "Blackpool",
+                                "price": 1.81
+                            },
+                            {
+                                "name": "Lincoln City",
+                                "price": 4.1
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.55
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "topsport",
+                "title": "TopSport",
+                "last_update": "2024-10-01T17:06:12Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:12Z",
+                        "outcomes": [
+                            {
+                                "name": "Blackpool",
+                                "price": 1.87
+                            },
+                            {
+                                "name": "Lincoln City",
+                                "price": 3.85
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tab",
+                "title": "TAB",
+                "last_update": "2024-10-01T17:06:11Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:11Z",
+                        "outcomes": [
+                            {
+                                "name": "Blackpool",
+                                "price": 1.87
+                            },
+                            {
+                                "name": "Lincoln City",
+                                "price": 3.8
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.4
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "06a627a4740847b28a3c88ca303766b0",
+        "sport_key": "soccer_england_league1",
+        "sport_title": "League 1",
+        "commence_time": "2024-10-01T18:45:00Z",
+        "home_team": "Northampton Town",
+        "away_team": "Bolton Wanderers",
+        "bookmakers": [
+            {
+                "key": "sportsbet",
+                "title": "SportsBet",
+                "last_update": "2024-10-01T17:06:11Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:11Z",
+                        "outcomes": [
+                            {
+                                "name": "Bolton Wanderers",
+                                "price": 1.75
+                            },
+                            {
+                                "name": "Northampton Town",
+                                "price": 4.5
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betr_au",
+                "title": "Betr",
+                "last_update": "2024-10-01T17:06:12Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:12Z",
+                        "outcomes": [
+                            {
+                                "name": "Bolton Wanderers",
+                                "price": 1.8
+                            },
+                            {
+                                "name": "Northampton Town",
+                                "price": 4.3
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betright",
+                "title": "Bet Right",
+                "last_update": "2024-10-01T17:06:12Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:12Z",
+                        "outcomes": [
+                            {
+                                "name": "Bolton Wanderers",
+                                "price": 1.8
+                            },
+                            {
+                                "name": "Northampton Town",
+                                "price": 4.25
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.35
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "pointsbetau",
+                "title": "PointsBet (AU)",
+                "last_update": "2024-10-01T17:06:11Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:11Z",
+                        "outcomes": [
+                            {
+                                "name": "Bolton Wanderers",
+                                "price": 1.83
+                            },
+                            {
+                                "name": "Northampton Town",
+                                "price": 4.25
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "playup",
+                "title": "PlayUp",
+                "last_update": "2024-10-01T17:06:10Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:10Z",
+                        "outcomes": [
+                            {
+                                "name": "Bolton Wanderers",
+                                "price": 1.8
+                            },
+                            {
+                                "name": "Northampton Town",
+                                "price": 4.2
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "betfair_ex_au",
+                "title": "Betfair",
+                "last_update": "2024-10-01T17:06:14Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:14Z",
+                        "outcomes": [
+                            {
+                                "name": "Bolton Wanderers",
+                                "price": 1.87
+                            },
+                            {
+                                "name": "Northampton Town",
+                                "price": 4.8
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.7
+                            }
+                        ]
+                    },
+                    {
+                        "key": "h2h_lay",
+                        "last_update": "2024-10-01T17:06:14Z",
+                        "outcomes": [
+                            {
+                                "name": "Bolton Wanderers",
+                                "price": 1.9
+                            },
+                            {
+                                "name": "Northampton Town",
+                                "price": 5.1
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.8
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "unibet",
+                "title": "Unibet",
+                "last_update": "2024-10-01T17:06:11Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:11Z",
+                        "outcomes": [
+                            {
+                                "name": "Bolton Wanderers",
+                                "price": 1.85
+                            },
+                            {
+                                "name": "Northampton Town",
+                                "price": 4.1
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.55
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tabtouch",
+                "title": "TABtouch",
+                "last_update": "2024-10-01T17:06:12Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:12Z",
+                        "outcomes": [
+                            {
+                                "name": "Bolton Wanderers",
+                                "price": 1.83
+                            },
+                            {
+                                "name": "Northampton Town",
+                                "price": 4.1
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "topsport",
+                "title": "TopSport",
+                "last_update": "2024-10-01T17:06:12Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:12Z",
+                        "outcomes": [
+                            {
+                                "name": "Bolton Wanderers",
+                                "price": 1.8
+                            },
+                            {
+                                "name": "Northampton Town",
+                                "price": 4.2
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.5
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "tab",
+                "title": "TAB",
+                "last_update": "2024-10-01T17:06:11Z",
+                "markets": [
+                    {
+                        "key": "h2h",
+                        "last_update": "2024-10-01T17:06:11Z",
+                        "outcomes": [
+                            {
+                                "name": "Bolton Wanderers",
+                                "price": 1.8
+                            },
+                            {
+                                "name": "Northampton Town",
+                                "price": 4.0
+                            },
+                            {
+                                "name": "Draw",
+                                "price": 3.4
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

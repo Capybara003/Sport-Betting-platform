@@ -10,6 +10,9 @@ import Features from './Features';
 import LiveBetting from './LiveBetting';
 import Score from './Score';
 import NavbarSection from './navbar';
+import { fetchLeagues, regUser } from '@/action/action';
+import { toastError } from '@/utils/toast';
+
 
 
 
@@ -38,8 +41,17 @@ const SolaBetOne = () => {
     setIsOpen(!isOpen);
   };
 
+  const registerUser = async(publickKey) => {
+   const data =  await regUser(publickKey)
+   if(data.status > 202) {
+    console.log("supposed")
+   }
+  }
+
   useEffect(() => {
     if (wallet.connected) {
+      localStorage.setItem("publickey", wallet.publicKey.toBase58())
+      registerUser(wallet.publicKey.toBase58())
       // Redirect to dashboard when the wallet is connected
       router.push('/dashboard/Football');
     }
