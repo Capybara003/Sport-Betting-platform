@@ -1,4 +1,4 @@
-const baseurl = "http://localhost:8081/api/v1";
+const baseurl = "https://gd4rlkmw-8081.uks1.devtunnels.ms/api/v1";
 const secret = "x3FGFJ4829033HGBSOGGGSMVDDHq";
 
 interface IFixtures {

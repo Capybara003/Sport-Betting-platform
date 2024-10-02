@@ -43,7 +43,7 @@ const SolaBetOne = () => {
 
   const registerUser = async(publickKey) => {
    const data =  await regUser(publickKey)
-   if(data.status > 202) {
+   if(data?.status > 202) {
     console.log("supposed")
    }
   }

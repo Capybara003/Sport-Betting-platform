@@ -1,0 +1,30 @@
+{
+    "status": 200,
+    "code": "Success",
+    "message": "Tickets fetched successfully",
+    "data": {
+        "page": 1,
+        "totalPages": 1,
+        "totalTickets": 3,
+        "tickets": [
+            {
+                "id": "81877280-3a6b-4459-b4a0-9bdc3b61864b",
+                "rating": 0,
+                "address": "8ZWEzK4JrTgHTN6rasAnikAswXZLspGyUGtqCKQA7dmb",
+                "totalMatch": 4,
+                "activeMatch": 4,
+                "paid": "YES",
+                "price": 200
+            },
+            {
+                "id": "0cf47cdd-0374-44f1-a75c-4192ab816815",
+                "rating": 0,
+                "address": "8ZWEzK4JrTgHTN6rasAnikAswXZLspGyUGtqCKQA7dmb",
+                "totalMatch": 4,
+                "activeMatch": 4,
+                "paid": "YES",
+                "price": 100
+            }
+        ]
+    }
+}
