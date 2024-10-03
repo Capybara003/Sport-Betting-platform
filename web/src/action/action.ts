@@ -9,6 +9,15 @@ interface IFixtures {
 interface IFixtureRequest {
   leaguesId: IFixtures[]
 }
+
+interface ITeamsBody {
+  fixtureId: string,
+  homeTeamId: string,
+  homeTeamName: string,
+  awayTeamId: string,
+  awayTeamName: string,
+ }
+
 export const regUser = async (publickey: string) => {
   try {
     const body = {
@@ -83,4 +92,22 @@ export const fetchFootballEvents = async() => {
       } catch (error) {
         console.log(error)
       }
+}
+
+
+export const fetchFootballTeams = async(body:ITeamsBody) => {
+  try {
+    const res = await fetch(`${baseurl}/sport/team-stats`, {
+      method: "POST",
+      headers: {
+        secret: `${secret}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body)
+    })
+    const data = await res.json();
+    return data;
+  } catch (error) {
+    console.log(error)
+  }
 }

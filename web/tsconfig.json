@@ -16,6 +16,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/component/taps.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/component/taps.jsx", "src/utils/football.pitch.jsx"],
   "exclude": ["node_modules"]
 }

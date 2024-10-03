@@ -1,0 +1,2758 @@
+{
+    "status": 200,
+    "code": "Success",
+    "message": "team fetched",
+    "data": {
+        "statistics": [
+            {
+                "teamsStats": {
+                    "get": "teams/statistics",
+                    "parameters": {
+                        "league": "39",
+                        "season": "2024",
+                        "team": "40"
+                    },
+                    "errors": [],
+                    "results": 11,
+                    "paging": {
+                        "current": 1,
+                        "total": 1
+                    },
+                    "response": {
+                        "league": {
+                            "id": 39,
+                            "name": "Premier League",
+                            "country": "England",
+                            "logo": "https://media.api-sports.io/football/leagues/39.png",
+                            "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                            "season": 2024
+                        },
+                        "team": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png"
+                        },
+                        "form": "WWWLWW",
+                        "fixtures": {
+                            "played": {
+                                "home": 3,
+                                "away": 3,
+                                "total": 6
+                            },
+                            "wins": {
+                                "home": 2,
+                                "away": 3,
+                                "total": 5
+                            },
+                            "draws": {
+                                "home": 0,
+                                "away": 0,
+                                "total": 0
+                            },
+                            "loses": {
+                                "home": 1,
+                                "away": 0,
+                                "total": 1
+                            }
+                        },
+                        "goals": {
+                            "for": {
+                                "total": {
+                                    "home": 5,
+                                    "away": 7,
+                                    "total": 12
+                                },
+                                "average": {
+                                    "home": "1.7",
+                                    "away": "2.3",
+                                    "total": "2.0"
+                                },
+                                "minute": {
+                                    "0-15": {
+                                        "total": 1,
+                                        "percentage": "8.33%"
+                                    },
+                                    "16-30": {
+                                        "total": 2,
+                                        "percentage": "16.67%"
+                                    },
+                                    "31-45": {
+                                        "total": 3,
+                                        "percentage": "25.00%"
+                                    },
+                                    "46-60": {
+                                        "total": 3,
+                                        "percentage": "25.00%"
+                                    },
+                                    "61-75": {
+                                        "total": 3,
+                                        "percentage": "25.00%"
+                                    },
+                                    "76-90": {
+                                        "total": null,
+                                        "percentage": null
+                                    },
+                                    "91-105": {
+                                        "total": null,
+                                        "percentage": null
+                                    },
+                                    "106-120": {
+                                        "total": null,
+                                        "percentage": null
+                                    }
+                                }
+                            },
+                            "against": {
+                                "total": {
+                                    "home": 1,
+                                    "away": 1,
+                                    "total": 2
+                                },
+                                "average": {
+                                    "home": "0.3",
+                                    "away": "0.3",
+                                    "total": "0.3"
+                                },
+                                "minute": {
+                                    "0-15": {
+                                        "total": null,
+                                        "percentage": null
+                                    },
+                                    "16-30": {
+                                        "total": null,
+                                        "percentage": null
+                                    },
+                                    "31-45": {
+                                        "total": null,
+                                        "percentage": null
+                                    },
+                                    "46-60": {
+                                        "total": 1,
+                                        "percentage": "50.00%"
+                                    },
+                                    "61-75": {
+                                        "total": 1,
+                                        "percentage": "50.00%"
+                                    },
+                                    "76-90": {
+                                        "total": null,
+                                        "percentage": null
+                                    },
+                                    "91-105": {
+                                        "total": null,
+                                        "percentage": null
+                                    },
+                                    "106-120": {
+                                        "total": null,
+                                        "percentage": null
+                                    }
+                                }
+                            }
+                        },
+                        "biggest": {
+                            "streak": {
+                                "wins": 3,
+                                "draws": 0,
+                                "loses": 1
+                            },
+                            "wins": {
+                                "home": "3-0",
+                                "away": "0-3"
+                            },
+                            "loses": {
+                                "home": "0-1",
+                                "away": null
+                            },
+                            "goals": {
+                                "for": {
+                                    "home": 3,
+                                    "away": 3
+                                },
+                                "against": {
+                                    "home": 1,
+                                    "away": 1
+                                }
+                            }
+                        },
+                        "clean_sheet": {
+                            "home": 2,
+                            "away": 2,
+                            "total": 4
+                        },
+                        "failed_to_score": {
+                            "home": 1,
+                            "away": 0,
+                            "total": 1
+                        },
+                        "penalty": {
+                            "scored": {
+                                "total": 1,
+                                "percentage": "100.00%"
+                            },
+                            "missed": {
+                                "total": 0,
+                                "percentage": "0%"
+                            },
+                            "total": 1
+                        },
+                        "lineups": [
+                            {
+                                "formation": "4-2-3-1",
+                                "played": 6
+                            }
+                        ],
+                        "cards": {
+                            "yellow": {
+                                "0-15": {
+                                    "total": 1,
+                                    "percentage": "8.33%"
+                                },
+                                "16-30": {
+                                    "total": 1,
+                                    "percentage": "8.33%"
+                                },
+                                "31-45": {
+                                    "total": 2,
+                                    "percentage": "16.67%"
+                                },
+                                "46-60": {
+                                    "total": 2,
+                                    "percentage": "16.67%"
+                                },
+                                "61-75": {
+                                    "total": 2,
+                                    "percentage": "16.67%"
+                                },
+                                "76-90": {
+                                    "total": 2,
+                                    "percentage": "16.67%"
+                                },
+                                "91-105": {
+                                    "total": 2,
+                                    "percentage": "16.67%"
+                                },
+                                "106-120": {
+                                    "total": null,
+                                    "percentage": null
+                                }
+                            },
+                            "red": {
+                                "0-15": {
+                                    "total": null,
+                                    "percentage": null
+                                },
+                                "16-30": {
+                                    "total": null,
+                                    "percentage": null
+                                },
+                                "31-45": {
+                                    "total": null,
+                                    "percentage": null
+                                },
+                                "46-60": {
+                                    "total": null,
+                                    "percentage": null
+                                },
+                                "61-75": {
+                                    "total": null,
+                                    "percentage": null
+                                },
+                                "76-90": {
+                                    "total": null,
+                                    "percentage": null
+                                },
+                                "91-105": {
+                                    "total": null,
+                                    "percentage": null
+                                },
+                                "106-120": {
+                                    "total": null,
+                                    "percentage": null
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "teamsStats": {
+                    "get": "teams/statistics",
+                    "parameters": {
+                        "league": "39",
+                        "season": "2024",
+                        "team": "52"
+                    },
+                    "errors": [],
+                    "results": 11,
+                    "paging": {
+                        "current": 1,
+                        "total": 1
+                    },
+                    "response": {
+                        "league": {
+                            "id": 39,
+                            "name": "Premier League",
+                            "country": "England",
+                            "logo": "https://media.api-sports.io/football/leagues/39.png",
+                            "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                            "season": 2024
+                        },
+                        "team": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png"
+                        },
+                        "form": "LLDDDL",
+                        "fixtures": {
+                            "played": {
+                                "home": 3,
+                                "away": 3,
+                                "total": 6
+                            },
+                            "wins": {
+                                "home": 0,
+                                "away": 0,
+                                "total": 0
+                            },
+                            "draws": {
+                                "home": 2,
+                                "away": 1,
+                                "total": 3
+                            },
+                            "loses": {
+                                "home": 1,
+                                "away": 2,
+                                "total": 3
+                            }
+                        },
+                        "goals": {
+                            "for": {
+                                "total": {
+                                    "home": 2,
+                                    "away": 3,
+                                    "total": 5
+                                },
+                                "average": {
+                                    "home": "0.7",
+                                    "away": "1.0",
+                                    "total": "0.8"
+                                },
+                                "minute": {
+                                    "0-15": {
+                                        "total": 1,
+                                        "percentage": "25.00%"
+                                    },
+                                    "16-30": {
+                                        "total": null,
+                                        "percentage": null
+                                    },
+                                    "31-45": {
+                                        "total": null,
+                                        "percentage": null
+                                    },
+                                    "46-60": {
+                                        "total": 2,
+                                        "percentage": "50.00%"
+                                    },
+                                    "61-75": {
+                                        "total": null,
+                                        "percentage": null
+                                    },
+                                    "76-90": {
+                                        "total": null,
+                                        "percentage": null
+                                    },
+                                    "91-105": {
+                                        "total": 1,
+                                        "percentage": "25.00%"
+                                    },
+                                    "106-120": {
+                                        "total": null,
+                                        "percentage": null
+                                    }
+                                }
+                            },
+                            "against": {
+                                "total": {
+                                    "home": 4,
+                                    "away": 5,
+                                    "total": 9
+                                },
+                                "average": {
+                                    "home": "1.3",
+                                    "away": "1.7",
+                                    "total": "1.5"
+                                },
+                                "minute": {
+                                    "0-15": {
+                                        "total": null,
+                                        "percentage": null
+                                    },
+                                    "16-30": {
+                                        "total": 3,
+                                        "percentage": "30.00%"
+                                    },
+                                    "31-45": {
+                                        "total": null,
+                                        "percentage": null
+                                    },
+                                    "46-60": {
+                                        "total": 4,
+                                        "percentage": "40.00%"
+                                    },
+                                    "61-75": {
+                                        "total": 2,
+                                        "percentage": "20.00%"
+                                    },
+                                    "76-90": {
+                                        "total": 1,
+                                        "percentage": "10.00%"
+                                    },
+                                    "91-105": {
+                                        "total": null,
+                                        "percentage": null
+                                    },
+                                    "106-120": {
+                                        "total": null,
+                                        "percentage": null
+                                    }
+                                }
+                            }
+                        },
+                        "biggest": {
+                            "streak": {
+                                "wins": 0,
+                                "draws": 3,
+                                "loses": 2
+                            },
+                            "wins": {
+                                "home": null,
+                                "away": null
+                            },
+                            "loses": {
+                                "home": "0-2",
+                                "away": "2-1"
+                            },
+                            "goals": {
+                                "for": {
+                                    "home": 2,
+                                    "away": 1
+                                },
+                                "against": {
+                                    "home": 2,
+                                    "away": 2
+                                }
+                            }
+                        },
+                        "clean_sheet": {
+                            "home": 1,
+                            "away": 0,
+                            "total": 1
+                        },
+                        "failed_to_score": {
+                            "home": 2,
+                            "away": 0,
+                            "total": 2
+                        },
+                        "penalty": {
+                            "scored": {
+                                "total": 1,
+                                "percentage": "100.00%"
+                            },
+                            "missed": {
+                                "total": 0,
+                                "percentage": "0%"
+                            },
+                            "total": 1
+                        },
+                        "lineups": [
+                            {
+                                "formation": "3-4-2-1",
+                                "played": 5
+                            },
+                            {
+                                "formation": "3-4-3",
+                                "played": 1
+                            }
+                        ],
+                        "cards": {
+                            "yellow": {
+                                "0-15": {
+                                    "total": 1,
+                                    "percentage": "9.09%"
+                                },
+                                "16-30": {
+                                    "total": 1,
+                                    "percentage": "9.09%"
+                                },
+                                "31-45": {
+                                    "total": null,
+                                    "percentage": null
+                                },
+                                "46-60": {
+                                    "total": 3,
+                                    "percentage": "27.27%"
+                                },
+                                "61-75": {
+                                    "total": 2,
+                                    "percentage": "18.18%"
+                                },
+                                "76-90": {
+                                    "total": 2,
+                                    "percentage": "18.18%"
+                                },
+                                "91-105": {
+                                    "total": 2,
+                                    "percentage": "18.18%"
+                                },
+                                "106-120": {
+                                    "total": null,
+                                    "percentage": null
+                                }
+                            },
+                            "red": {
+                                "0-15": {
+                                    "total": null,
+                                    "percentage": null
+                                },
+                                "16-30": {
+                                    "total": null,
+                                    "percentage": null
+                                },
+                                "31-45": {
+                                    "total": null,
+                                    "percentage": null
+                                },
+                                "46-60": {
+                                    "total": null,
+                                    "percentage": null
+                                },
+                                "61-75": {
+                                    "total": null,
+                                    "percentage": null
+                                },
+                                "76-90": {
+                                    "total": null,
+                                    "percentage": null
+                                },
+                                "91-105": {
+                                    "total": null,
+                                    "percentage": null
+                                },
+                                "106-120": {
+                                    "total": null,
+                                    "percentage": null
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        ],
+        "lineup":{
+            "get": "fixtures/lineups",
+            "parameters": {
+              "fixture": "592872"
+            },
+            "errors": [],
+            "results": 2,
+            "paging": {
+              "current": 1,
+              "total": 1
+            },
+            "response": [
+              {
+                "team": {
+                  "id": 50,
+                  "name": "Manchester City",
+                  "logo": "https://media.api-sports.io/football/teams/50.png",
+                  "colors": {
+                    "player": {
+                      "primary": "5badff",
+                      "number": "ffffff",
+                      "border": "99ff99"
+                    },
+                    "goalkeeper": {
+                      "primary": "99ff99",
+                      "number": "000000",
+                      "border": "99ff99"
+                    }
+                  }
+                },
+                "formation": "4-3-3",
+                "startXI": [
+                  {
+                    "player": {
+                      "id": 617,
+                      "name": "Ederson",
+                      "number": 31,
+                      "pos": "G",
+                      "grid": "1:1"
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 627,
+                      "name": "Kyle Walker",
+                      "number": 2,
+                      "pos": "D",
+                      "grid": "2:4"
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 626,
+                      "name": "John Stones",
+                      "number": 5,
+                      "pos": "D",
+                      "grid": "2:3"
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 567,
+                      "name": "Rúben Dias",
+                      "number": 3,
+                      "pos": "D",
+                      "grid": "2:2"
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 641,
+                      "name": "Oleksandr Zinchenko",
+                      "number": 11,
+                      "pos": "D",
+                      "grid": "2:1"
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 629,
+                      "name": "Kevin De Bruyne",
+                      "number": 17,
+                      "pos": "M",
+                      "grid": "3:3"
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 640,
+                      "name": "Fernandinho",
+                      "number": 25,
+                      "pos": "M",
+                      "grid": "3:2"
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 631,
+                      "name": "Phil Foden",
+                      "number": 47,
+                      "pos": "M",
+                      "grid": "3:1"
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 635,
+                      "name": "Riyad Mahrez",
+                      "number": 26,
+                      "pos": "F",
+                      "grid": "4:3"
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 643,
+                      "name": "Gabriel Jesus",
+                      "number": 9,
+                      "pos": "F",
+                      "grid": "4:2"
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 645,
+                      "name": "Raheem Sterling",
+                      "number": 7,
+                      "pos": "F",
+                      "grid": "4:1"
+                    }
+                  }
+                ],
+                "substitutes": [
+                  {
+                    "player": {
+                      "id": 50828,
+                      "name": "Zack Steffen",
+                      "number": 13,
+                      "pos": "G",
+                      "grid": null
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 623,
+                      "name": "Benjamin Mendy",
+                      "number": 22,
+                      "pos": "D",
+                      "grid": null
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 18861,
+                      "name": "Nathan Aké",
+                      "number": 6,
+                      "pos": "D",
+                      "grid": null
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 622,
+                      "name": "Aymeric Laporte",
+                      "number": 14,
+                      "pos": "D",
+                      "grid": null
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 633,
+                      "name": "İlkay Gündoğan",
+                      "number": 8,
+                      "pos": "M",
+                      "grid": null
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 44,
+                      "name": "Rodri",
+                      "number": 16,
+                      "pos": "M",
+                      "grid": null
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 931,
+                      "name": "Ferrán Torres",
+                      "number": 21,
+                      "pos": "F",
+                      "grid": null
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 636,
+                      "name": "Bernardo Silva",
+                      "number": 20,
+                      "pos": "M",
+                      "grid": null
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 642,
+                      "name": "Sergio Agüero",
+                      "number": 10,
+                      "pos": "F",
+                      "grid": null
+                    }
+                  }
+                ],
+                "coach": {
+                  "id": 4,
+                  "name": "Guardiola",
+                  "photo": "https://media.api-sports.io/football/coachs/4.png"
+                }
+              },
+              {
+                "team": {
+                  "id": 45,
+                  "name": "Everton",
+                  "logo": "https://media.api-sports.io/football/teams/45.png",
+                  "colors": {
+                    "player": {
+                      "primary": "070707",
+                      "number": "ffffff",
+                      "border": "66ff00"
+                    },
+                    "goalkeeper": {
+                      "primary": "66ff00",
+                      "number": "000000",
+                      "border": "66ff00"
+                    }
+                  }
+                },
+                "formation": "4-3-1-2",
+                "startXI": [
+                  {
+                    "player": {
+                      "id": 2932,
+                      "name": "Jordan Pickford",
+                      "number": 1,
+                      "pos": "G",
+                      "grid": "1:1"
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 19150,
+                      "name": "Mason Holgate",
+                      "number": 4,
+                      "pos": "D",
+                      "grid": "2:4"
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 2934,
+                      "name": "Michael Keane",
+                      "number": 5,
+                      "pos": "D",
+                      "grid": "2:3"
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 19073,
+                      "name": "Ben Godfrey",
+                      "number": 22,
+                      "pos": "D",
+                      "grid": "2:2"
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 2724,
+                      "name": "Lucas Digne",
+                      "number": 12,
+                      "pos": "D",
+                      "grid": "2:1"
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 18805,
+                      "name": "Abdoulaye Doucouré",
+                      "number": 16,
+                      "pos": "M",
+                      "grid": "3:3"
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 326,
+                      "name": "Allan",
+                      "number": 6,
+                      "pos": "M",
+                      "grid": "3:2"
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 18762,
+                      "name": "Tom Davies",
+                      "number": 26,
+                      "pos": "M",
+                      "grid": "3:1"
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 2795,
+                      "name": "Gylfi Sigurðsson",
+                      "number": 10,
+                      "pos": "M",
+                      "grid": "4:1"
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 18766,
+                      "name": "Dominic Calvert-Lewin",
+                      "number": 9,
+                      "pos": "F",
+                      "grid": "5:2"
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 2413,
+                      "name": "Richarlison",
+                      "number": 7,
+                      "pos": "F",
+                      "grid": "5:1"
+                    }
+                  }
+                ],
+                "substitutes": [
+                  {
+                    "player": {
+                      "id": 18755,
+                      "name": "João Virgínia",
+                      "number": 31,
+                      "pos": "G",
+                      "grid": null
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 766,
+                      "name": "Robin Olsen",
+                      "number": 33,
+                      "pos": "G",
+                      "grid": null
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 156490,
+                      "name": "Niels Nkounkou",
+                      "number": 18,
+                      "pos": "D",
+                      "grid": null
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 18758,
+                      "name": "Séamus Coleman",
+                      "number": 23,
+                      "pos": "D",
+                      "grid": null
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 138849,
+                      "name": "Kyle John",
+                      "number": 48,
+                      "pos": "D",
+                      "grid": null
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 18765,
+                      "name": "André Gomes",
+                      "number": 21,
+                      "pos": "M",
+                      "grid": null
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 1455,
+                      "name": "Alex Iwobi",
+                      "number": 17,
+                      "pos": "F",
+                      "grid": null
+                    }
+                  },
+                  {
+                    "player": {
+                      "id": 18761,
+                      "name": "Bernard",
+                      "number": 20,
+                      "pos": "F",
+                      "grid": null
+                    }
+                  }
+                ],
+                "coach": {
+                  "id": 2407,
+                  "name": "C. Ancelotti",
+                  "photo": "https://media.api-sports.io/football/coachs/2407.png"
+                }
+              }
+            ]
+          },
+        "head2head": {
+            "get": "fixtures/headtohead",
+            "parameters": {
+                "h2h": "40-52"
+            },
+            "errors": [],
+            "results": 26,
+            "paging": {
+                "current": 1,
+                "total": 1
+            },
+            "response": [
+                {
+                    "fixture": {
+                        "id": 289,
+                        "referee": "Jonathan Moss, England",
+                        "timezone": "UTC",
+                        "date": "2019-01-19T15:00:00+00:00",
+                        "timestamp": 1547910000,
+                        "periods": {
+                            "first": 1547910000,
+                            "second": 1547913600
+                        },
+                        "venue": {
+                            "id": 550,
+                            "name": "Anfield",
+                            "city": "Liverpool"
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2018,
+                        "round": "Regular Season - 23"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": true
+                        },
+                        "away": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": false
+                        }
+                    },
+                    "goals": {
+                        "home": 4,
+                        "away": 3
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 0,
+                            "away": 1
+                        },
+                        "fulltime": {
+                            "home": 4,
+                            "away": 3
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 11899,
+                        "referee": "Kevin Friend, England",
+                        "timezone": "UTC",
+                        "date": "2017-08-19T14:00:00+00:00",
+                        "timestamp": 1503151200,
+                        "periods": {
+                            "first": 1503151200,
+                            "second": 1503154800
+                        },
+                        "venue": {
+                            "id": 550,
+                            "name": "Anfield",
+                            "city": "Liverpool"
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2017,
+                        "round": "Regular Season - 2"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": true
+                        },
+                        "away": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": false
+                        }
+                    },
+                    "goals": {
+                        "home": 1,
+                        "away": 0
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 0,
+                            "away": 0
+                        },
+                        "fulltime": {
+                            "home": 1,
+                            "away": 0
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 17368,
+                        "referee": "Andre Marriner, England",
+                        "timezone": "UTC",
+                        "date": "2017-04-23T15:30:00+00:00",
+                        "timestamp": 1492961400,
+                        "periods": {
+                            "first": 1492961400,
+                            "second": 1492965000
+                        },
+                        "venue": {
+                            "id": 550,
+                            "name": "Anfield",
+                            "city": "Liverpool"
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2016,
+                        "round": "Regular Season - 34"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": false
+                        },
+                        "away": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": true
+                        }
+                    },
+                    "goals": {
+                        "home": 1,
+                        "away": 2
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 1,
+                            "away": 1
+                        },
+                        "fulltime": {
+                            "home": 1,
+                            "away": 2
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 157318,
+                        "referee": "Martin Atkinson, England",
+                        "timezone": "UTC",
+                        "date": "2020-06-24T19:15:00+00:00",
+                        "timestamp": 1593026100,
+                        "periods": {
+                            "first": 1593026100,
+                            "second": 1593029700
+                        },
+                        "venue": {
+                            "id": 550,
+                            "name": "Anfield",
+                            "city": "Liverpool"
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2019,
+                        "round": "Regular Season - 31"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": true
+                        },
+                        "away": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": false
+                        }
+                    },
+                    "goals": {
+                        "home": 4,
+                        "away": 0
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 2,
+                            "away": 0
+                        },
+                        "fulltime": {
+                            "home": 4,
+                            "away": 0
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 192415,
+                        "referee": "Neil Swarbrick, England",
+                        "timezone": "UTC",
+                        "date": "2015-11-08T16:00:00+00:00",
+                        "timestamp": 1446998400,
+                        "periods": {
+                            "first": 1446998400,
+                            "second": 1447002000
+                        },
+                        "venue": {
+                            "id": 550,
+                            "name": "Anfield",
+                            "city": "Liverpool"
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2015,
+                        "round": "Regular Season - 12"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": false
+                        },
+                        "away": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": true
+                        }
+                    },
+                    "goals": {
+                        "home": 1,
+                        "away": 2
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 1,
+                            "away": 1
+                        },
+                        "fulltime": {
+                            "home": 1,
+                            "away": 2
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 193043,
+                        "referee": null,
+                        "timezone": "UTC",
+                        "date": "2015-05-16T16:30:00+00:00",
+                        "timestamp": 1431793800,
+                        "periods": {
+                            "first": 1431793800,
+                            "second": 1431797400
+                        },
+                        "venue": {
+                            "id": null,
+                            "name": "Anfield (Liverpool)",
+                            "city": null
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2014,
+                        "round": "Regular Season - 37"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": false
+                        },
+                        "away": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": true
+                        }
+                    },
+                    "goals": {
+                        "home": 1,
+                        "away": 3
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 1,
+                            "away": 1
+                        },
+                        "fulltime": {
+                            "home": 1,
+                            "away": 3
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 193121,
+                        "referee": null,
+                        "timezone": "UTC",
+                        "date": "2013-10-05T14:00:00+00:00",
+                        "timestamp": 1380981600,
+                        "periods": {
+                            "first": 1380981600,
+                            "second": 1380985200
+                        },
+                        "venue": {
+                            "id": null,
+                            "name": "Anfield (Liverpool)",
+                            "city": null
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2013,
+                        "round": "Regular Season - 7"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": true
+                        },
+                        "away": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": false
+                        }
+                    },
+                    "goals": {
+                        "home": 3,
+                        "away": 1
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 3,
+                            "away": 0
+                        },
+                        "fulltime": {
+                            "home": 3,
+                            "away": 1
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 592871,
+                        "referee": "Andre Marriner, England",
+                        "timezone": "UTC",
+                        "date": "2021-05-23T15:00:00+00:00",
+                        "timestamp": 1621782000,
+                        "periods": {
+                            "first": 1621782000,
+                            "second": 1621785600
+                        },
+                        "venue": {
+                            "id": 550,
+                            "name": "Anfield",
+                            "city": "Liverpool"
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2020,
+                        "round": "Regular Season - 38"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": true
+                        },
+                        "away": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": false
+                        }
+                    },
+                    "goals": {
+                        "home": 2,
+                        "away": 0
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 1,
+                            "away": 0
+                        },
+                        "fulltime": {
+                            "home": 2,
+                            "away": 0
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 710599,
+                        "referee": "A. Madley",
+                        "timezone": "UTC",
+                        "date": "2021-09-18T14:00:00+00:00",
+                        "timestamp": 1631973600,
+                        "periods": {
+                            "first": 1631973600,
+                            "second": 1631977200
+                        },
+                        "venue": {
+                            "id": 550,
+                            "name": "Anfield",
+                            "city": "Liverpool"
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2021,
+                        "round": "Regular Season - 5"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": true
+                        },
+                        "away": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": false
+                        }
+                    },
+                    "goals": {
+                        "home": 3,
+                        "away": 0
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 1,
+                            "away": 0
+                        },
+                        "fulltime": {
+                            "home": 3,
+                            "away": 0
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 867961,
+                        "referee": "P. Tierney",
+                        "timezone": "UTC",
+                        "date": "2022-08-15T19:00:00+00:00",
+                        "timestamp": 1660590000,
+                        "periods": {
+                            "first": 1660590000,
+                            "second": 1660593600
+                        },
+                        "venue": {
+                            "id": 550,
+                            "name": "Anfield",
+                            "city": "Liverpool"
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2022,
+                        "round": "Regular Season - 2"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": null
+                        },
+                        "away": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": null
+                        }
+                    },
+                    "goals": {
+                        "home": 1,
+                        "away": 1
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 0,
+                            "away": 1
+                        },
+                        "fulltime": {
+                            "home": 1,
+                            "away": 1
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 869517,
+                        "referee": "M. Jahari",
+                        "timezone": "UTC",
+                        "date": "2022-07-15T12:35:00+00:00",
+                        "timestamp": 1657888500,
+                        "periods": {
+                            "first": 1657888500,
+                            "second": 1657892100
+                        },
+                        "venue": {
+                            "id": 3897,
+                            "name": "The National Stadium",
+                            "city": "Singapore"
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 667,
+                        "name": "Friendlies Clubs",
+                        "country": "World",
+                        "logo": "https://media.api-sports.io/football/leagues/667.png",
+                        "flag": null,
+                        "season": 2022,
+                        "round": "Club Friendlies 1"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": true
+                        },
+                        "away": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": false
+                        }
+                    },
+                    "goals": {
+                        "home": 2,
+                        "away": 0
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 1,
+                            "away": 0
+                        },
+                        "fulltime": {
+                            "home": 2,
+                            "away": 0
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 1035499,
+                        "referee": "C. Kavanagh",
+                        "timezone": "UTC",
+                        "date": "2024-04-14T13:00:00+00:00",
+                        "timestamp": 1713099600,
+                        "periods": {
+                            "first": 1713099600,
+                            "second": 1713103200
+                        },
+                        "venue": {
+                            "id": 550,
+                            "name": "Anfield",
+                            "city": "Liverpool"
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2023,
+                        "round": "Regular Season - 33"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": false
+                        },
+                        "away": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": true
+                        }
+                    },
+                    "goals": {
+                        "home": 0,
+                        "away": 1
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 0,
+                            "away": 1
+                        },
+                        "fulltime": {
+                            "home": 0,
+                            "away": 1
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 1208396,
+                        "referee": null,
+                        "timezone": "UTC",
+                        "date": "2025-05-25T15:00:00+00:00",
+                        "timestamp": 1748185200,
+                        "periods": {
+                            "first": null,
+                            "second": null
+                        },
+                        "venue": {
+                            "id": 550,
+                            "name": "Anfield",
+                            "city": "Liverpool"
+                        },
+                        "status": {
+                            "long": "Not Started",
+                            "short": "NS",
+                            "elapsed": null
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2024,
+                        "round": "Regular Season - 38"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": null
+                        },
+                        "away": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": null
+                        }
+                    },
+                    "goals": {
+                        "home": null,
+                        "away": null
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "fulltime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 84,
+                        "referee": "Michael Oliver, England",
+                        "timezone": "UTC",
+                        "date": "2018-08-20T19:00:00+00:00",
+                        "timestamp": 1534791600,
+                        "periods": {
+                            "first": 1534791600,
+                            "second": 1534795200
+                        },
+                        "venue": {
+                            "id": 525,
+                            "name": "Selhurst Park",
+                            "city": "London"
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2018,
+                        "round": "Regular Season - 2"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": false
+                        },
+                        "away": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": true
+                        }
+                    },
+                    "goals": {
+                        "home": 0,
+                        "away": 2
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 0,
+                            "away": 1
+                        },
+                        "fulltime": {
+                            "home": 0,
+                            "away": 2
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 11607,
+                        "referee": "Neil Swarbrick, England",
+                        "timezone": "UTC",
+                        "date": "2018-03-31T11:30:00+00:00",
+                        "timestamp": 1522495800,
+                        "periods": {
+                            "first": 1522495800,
+                            "second": 1522499400
+                        },
+                        "venue": {
+                            "id": 525,
+                            "name": "Selhurst Park",
+                            "city": "London"
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2017,
+                        "round": "Regular Season - 32"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": false
+                        },
+                        "away": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": true
+                        }
+                    },
+                    "goals": {
+                        "home": 1,
+                        "away": 2
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 1,
+                            "away": 0
+                        },
+                        "fulltime": {
+                            "home": 1,
+                            "away": 2
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 17600,
+                        "referee": "Andre Marriner, England",
+                        "timezone": "UTC",
+                        "date": "2016-10-29T16:30:00+00:00",
+                        "timestamp": 1477758600,
+                        "periods": {
+                            "first": 1477758600,
+                            "second": 1477762200
+                        },
+                        "venue": {
+                            "id": 525,
+                            "name": "Selhurst Park",
+                            "city": "London"
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2016,
+                        "round": "Regular Season - 10"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": false
+                        },
+                        "away": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": true
+                        }
+                    },
+                    "goals": {
+                        "home": 2,
+                        "away": 4
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 2,
+                            "away": 3
+                        },
+                        "fulltime": {
+                            "home": 2,
+                            "away": 4
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 157139,
+                        "referee": "Kevin Friend, England",
+                        "timezone": "UTC",
+                        "date": "2019-11-23T15:00:00+00:00",
+                        "timestamp": 1574521200,
+                        "periods": {
+                            "first": 1574521200,
+                            "second": 1574524800
+                        },
+                        "venue": {
+                            "id": 525,
+                            "name": "Selhurst Park",
+                            "city": "London"
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2019,
+                        "round": "Regular Season - 13"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": false
+                        },
+                        "away": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": true
+                        }
+                    },
+                    "goals": {
+                        "home": 1,
+                        "away": 2
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 0,
+                            "away": 0
+                        },
+                        "fulltime": {
+                            "home": 1,
+                            "away": 2
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 192585,
+                        "referee": "Andre Marriner, England",
+                        "timezone": "UTC",
+                        "date": "2016-03-06T13:30:00+00:00",
+                        "timestamp": 1457271000,
+                        "periods": {
+                            "first": 1457271000,
+                            "second": 1457274600
+                        },
+                        "venue": {
+                            "id": 525,
+                            "name": "Selhurst Park",
+                            "city": "London"
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2015,
+                        "round": "Regular Season - 29"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": false
+                        },
+                        "away": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": true
+                        }
+                    },
+                    "goals": {
+                        "home": 1,
+                        "away": 2
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 0,
+                            "away": 0
+                        },
+                        "fulltime": {
+                            "home": 1,
+                            "away": 2
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 192794,
+                        "referee": null,
+                        "timezone": "UTC",
+                        "date": "2014-11-23T13:30:00+00:00",
+                        "timestamp": 1416749400,
+                        "periods": {
+                            "first": 1416749400,
+                            "second": 1416753000
+                        },
+                        "venue": {
+                            "id": null,
+                            "name": "Selhurst Park (London)",
+                            "city": null
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2014,
+                        "round": "Regular Season - 12"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": true
+                        },
+                        "away": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": false
+                        }
+                    },
+                    "goals": {
+                        "home": 3,
+                        "away": 1
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 1,
+                            "away": 1
+                        },
+                        "fulltime": {
+                            "home": 3,
+                            "away": 1
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 193426,
+                        "referee": null,
+                        "timezone": "UTC",
+                        "date": "2014-05-05T19:00:00+00:00",
+                        "timestamp": 1399316400,
+                        "periods": {
+                            "first": 1399316400,
+                            "second": 1399320000
+                        },
+                        "venue": {
+                            "id": null,
+                            "name": "Selhurst Park (London)",
+                            "city": null
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2013,
+                        "round": "Regular Season - 37"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": null
+                        },
+                        "away": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": null
+                        }
+                    },
+                    "goals": {
+                        "home": 3,
+                        "away": 3
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 0,
+                            "away": 1
+                        },
+                        "fulltime": {
+                            "home": 3,
+                            "away": 3
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 449174,
+                        "referee": null,
+                        "timezone": "UTC",
+                        "date": "2015-02-14T17:30:00+00:00",
+                        "timestamp": 1423935000,
+                        "periods": {
+                            "first": 1423935000,
+                            "second": 1423938600
+                        },
+                        "venue": {
+                            "id": 525,
+                            "name": "Selhurst Park",
+                            "city": "London"
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 45,
+                        "name": "FA Cup",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/45.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2014,
+                        "round": "5th Round"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": false
+                        },
+                        "away": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": true
+                        }
+                    },
+                    "goals": {
+                        "home": 1,
+                        "away": 2
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 1,
+                            "away": 0
+                        },
+                        "fulltime": {
+                            "home": 1,
+                            "away": 2
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 592274,
+                        "referee": "J. Moss",
+                        "timezone": "UTC",
+                        "date": "2020-12-19T12:30:00+00:00",
+                        "timestamp": 1608381000,
+                        "periods": {
+                            "first": 1608381000,
+                            "second": 1608384600
+                        },
+                        "venue": {
+                            "id": 525,
+                            "name": "Selhurst Park",
+                            "city": "London"
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2020,
+                        "round": "Regular Season - 14"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": false
+                        },
+                        "away": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": true
+                        }
+                    },
+                    "goals": {
+                        "home": 0,
+                        "away": 7
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 0,
+                            "away": 3
+                        },
+                        "fulltime": {
+                            "home": 0,
+                            "away": 7
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 710779,
+                        "referee": "K. Friend",
+                        "timezone": "UTC",
+                        "date": "2022-01-23T14:00:00+00:00",
+                        "timestamp": 1642946400,
+                        "periods": {
+                            "first": 1642946400,
+                            "second": 1642950000
+                        },
+                        "venue": {
+                            "id": 525,
+                            "name": "Selhurst Park",
+                            "city": "London"
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2021,
+                        "round": "Regular Season - 23"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": false
+                        },
+                        "away": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": true
+                        }
+                    },
+                    "goals": {
+                        "home": 1,
+                        "away": 3
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 0,
+                            "away": 2
+                        },
+                        "fulltime": {
+                            "home": 1,
+                            "away": 3
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 868187,
+                        "referee": "D. England",
+                        "timezone": "UTC",
+                        "date": "2023-02-25T19:45:00+00:00",
+                        "timestamp": 1677354300,
+                        "periods": {
+                            "first": 1677354300,
+                            "second": 1677357900
+                        },
+                        "venue": {
+                            "id": 525,
+                            "name": "Selhurst Park",
+                            "city": "London"
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2022,
+                        "round": "Regular Season - 25"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": null
+                        },
+                        "away": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": null
+                        }
+                    },
+                    "goals": {
+                        "home": 0,
+                        "away": 0
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 0,
+                            "away": 0
+                        },
+                        "fulltime": {
+                            "home": 0,
+                            "away": 0
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 1035326,
+                        "referee": "A. Madley",
+                        "timezone": "UTC",
+                        "date": "2023-12-09T12:30:00+00:00",
+                        "timestamp": 1702125000,
+                        "periods": {
+                            "first": 1702125000,
+                            "second": 1702128600
+                        },
+                        "venue": {
+                            "id": 525,
+                            "name": "Selhurst Park",
+                            "city": "London"
+                        },
+                        "status": {
+                            "long": "Match Finished",
+                            "short": "FT",
+                            "elapsed": 90
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2023,
+                        "round": "Regular Season - 16"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": false
+                        },
+                        "away": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": true
+                        }
+                    },
+                    "goals": {
+                        "home": 1,
+                        "away": 2
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": 0,
+                            "away": 0
+                        },
+                        "fulltime": {
+                            "home": 1,
+                            "away": 2
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                },
+                {
+                    "fixture": {
+                        "id": 1208086,
+                        "referee": "S. Hooper",
+                        "timezone": "UTC",
+                        "date": "2024-10-05T11:30:00+00:00",
+                        "timestamp": 1728127800,
+                        "periods": {
+                            "first": null,
+                            "second": null
+                        },
+                        "venue": {
+                            "id": 525,
+                            "name": "Selhurst Park",
+                            "city": "London"
+                        },
+                        "status": {
+                            "long": "Not Started",
+                            "short": "NS",
+                            "elapsed": null
+                        }
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "flag": "https://media.api-sports.io/flags/gb-eng.svg",
+                        "season": 2024,
+                        "round": "Regular Season - 7"
+                    },
+                    "teams": {
+                        "home": {
+                            "id": 52,
+                            "name": "Crystal Palace",
+                            "logo": "https://media.api-sports.io/football/teams/52.png",
+                            "winner": null
+                        },
+                        "away": {
+                            "id": 40,
+                            "name": "Liverpool",
+                            "logo": "https://media.api-sports.io/football/teams/40.png",
+                            "winner": null
+                        }
+                    },
+                    "goals": {
+                        "home": null,
+                        "away": null
+                    },
+                    "score": {
+                        "halftime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "fulltime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "extratime": {
+                            "home": null,
+                            "away": null
+                        },
+                        "penalty": {
+                            "home": null,
+                            "away": null
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
