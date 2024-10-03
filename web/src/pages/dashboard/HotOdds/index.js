@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import Layout from "../layout";
 import { FcRating } from "react-icons/fc";
+import * as web3 from "@solana/web3.js";
+import { useConnection, useWallet } from "@solana/wallet-adapter-react";
+import NavbarSection from '../../../component/navbar';
 
 
 const fetchTickets = async () => {
@@ -10,7 +13,10 @@ const fetchTickets = async () => {
 export default function HotOdds() {
   const [tickets, setTickets] = useState([]); 
   const [loading, setLoading] = useState(true); 
-
+  const [selectTicket, setSeletTicke] = useState(null)
+  const { publicKey, sendTransaction } = useWallet();
+  const { connection } = useConnection();
+  // const wallet = useWallet();
   useEffect(() => {
     const getTickets = async () => {
       try {
@@ -30,13 +36,40 @@ export default function HotOdds() {
     return <p>Loading tickets...</p>; 
   }
 
+  const handleSelectTicket = async (ticket) => {
+    console.log(ticket)
+    try {
+      setLoading(true);
+      const transaction = new web3.Transaction();
+  
+        const recipient = new web3.PublicKey(ticket.address);
+        const sendSolInstruction = web3.SystemProgram.transfer({
+        fromPubkey: publicKey,
+        toPubkey: recipient,
+        lamports: web3.LAMPORTS_PER_SOL * Number(ticket.price),
+      });
+       transaction.add(sendSolInstruction);
+      const confirmTransaction = await sendTransaction(transaction, connection);
+      console.log("successful")
+      alert("Transaction successful ✅")
+      setLoading(false);
+    } catch (error) {
+      alert("An error occured ❌")
+      console.log(error);
+      setLoading(false);
+    }
+  }
+  console.log(tickets)
   return (
     <Layout>
-      <div className="overflow-x-auto no-scrollbar flex space-x-8 sm:grid sm:grid-cols-3 w-full">
+            {/* <NavbarSection /> */}
+
+      <div className="overflow-x-auto no-scrollbar mt-20 flex space-x-8 sm:grid sm:grid-cols-3 w-full">
         {tickets.map((ticket) => (
           <section
             key={ticket.id} 
             className="my-6 mx-4 border border-slate-400 cursor-pointer rounded-lg bg-[#2f0a2f] w-[250px] h-[221px] sm:w-[280px] text-white sm:h-[221px]"
+            onClick={() => handleSelectTicket(ticket)}
           >
             <div className="rounded-lg">
               <div className="p-2 bg-[#5c0156] rounded-lg flex gap-3">
