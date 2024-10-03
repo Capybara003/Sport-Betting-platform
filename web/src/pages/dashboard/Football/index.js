@@ -161,7 +161,9 @@ export default function Football() {
   }, []);
 
   return (
+
     <Layout>
+      
       <div className="flex flex-row overflow-hidden h-[100vh]">
         <div className="w-full">
           <Box sx={{ maxWidth: { xs: 320, sm: "100%" }, bgcolor: "#330034" }}>
