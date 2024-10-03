@@ -68,7 +68,6 @@ export default function HotOdds() {
     try {
       setLoading(true)
       const realData = await fetchTicket()
-      console.log("real", realData) 
       setTickets(realData);
     } catch (error) {
       console.error("Error fetching tickets:", error);
@@ -82,7 +81,6 @@ export default function HotOdds() {
   }, []);
 
   const handleSelectTicket = async (ticket) => {
-    console.log(ticket)
     try {
       const transaction = new web3.Transaction();
         const recipient = new web3.PublicKey(ticket.address);
@@ -102,11 +100,9 @@ export default function HotOdds() {
       alert("Transaction successful ✅")
     } catch (error) {
       alert("An error occured ❌")
-      console.log(error);
       setLoading(false);
     }
   }
-  console.log(tickets)
   return (
     <Layout>
          <Box sx={{ bgcolor: '', width:"100%" }}>

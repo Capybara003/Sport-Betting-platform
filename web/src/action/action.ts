@@ -1,4 +1,4 @@
-const baseurl = "https://gd4rlkmw-8081.uks1.devtunnels.ms/api/v1";
+const baseurl = "http://localhost:8081/api/v1";
 const secret = "x3FGFJ4829033HGBSOGGGSMVDDHq";
 
 interface IFixtures {
@@ -30,7 +30,6 @@ export const regUser = async (publickey: string) => {
     const body = {
       address: publickey,
     };
-    console.log(body);
     const res = await fetch(`${baseurl}/auth/set-identity`, {
       method: "POST",
       headers: {
@@ -47,7 +46,7 @@ export const regUser = async (publickey: string) => {
   }
 };
 
-export const fetchLeagues = async (publickey: string) => {
+export const fetchLeagues = async () => {
   try {
     const res = await fetch(`${baseurl}/sport/leagues`, {
       method: "GET",

@@ -12,6 +12,7 @@ import Modal from "@mui/material/Modal";
 import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
 import { color } from "framer-motion";
+import { formatDate } from "../utils/date.formatter";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -81,7 +82,6 @@ export default function MyHotOdds() {
     try {
       setLoading(true);
       const realData = await fetchPaidTicket();
-      console.log("real", realData);
       setTickets(realData);
     } catch (error) {
       console.error("Error fetching tickets:", error);
@@ -98,9 +98,7 @@ export default function MyHotOdds() {
     const data = await fetchTicketMatch(ticket.id);
     setBets(data);
     handleOpen();
-    console.log(data);
   };
-  //   console.log(tickets)
   return (
     <Box sx={{ bgcolor: "", width: "100%" }}>
       <div className="overflow-x-auto no-scrollbar mt-3 flex space-x-8 sm:grid sm:grid-cols-3 w-full">
@@ -163,6 +161,7 @@ export default function MyHotOdds() {
       >
         <Box sx={style}>
          {bet && bet.bets.map((bet) => {
+           const dates = formatDate(bet.matchDate)
             return <div className="bg-[#1D001B] py-5 px-3" key={bet.id}>
              <div className="flex justify-between">
                <div className="flex">
@@ -201,7 +200,7 @@ export default function MyHotOdds() {
                className="flex justify-center align-center"
                style={{ opacity: 0.2 }}
              >
-               2023 3pm
+               {dates}
              </b>
            </div>
          })}
