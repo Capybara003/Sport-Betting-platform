@@ -15,11 +15,10 @@ export default function H2HTable({ h2h }) {
   const columns = [
     { id: "team", label: "Team", minWidth: 200 },
     { id: "date", label: "Date", minWidth: 100 },
-    { id: "status", label: "Status", minWidth: 100 },
     { id: "referee", label: "Referee", minWidth: 200 },
     { id: "venue", label: "Venue", minWidth: 100 },
     { id: "goals", label: "Goals", minWidth: 100 },
-    { id: "league", label: "League", minWidth: 100 },
+    { id: "league", label: "League", minWidth: 150 },
     { id: "score", label: "Score", minWidth: 100 },
     { id: "season", label: "Season", minWidth: 100 },
   ];
@@ -36,7 +35,6 @@ export default function H2HTable({ h2h }) {
         name: team.name,
       },
       date: formatDate(matchData.fixture.date),
-      status: matchData.fixture.status.long,
       referee: matchData.fixture.referee,
       venue: matchData.fixture.venue.name,
       goals: team === matchData.teams.home ? matchData.goals.home : matchData.goals.away,
