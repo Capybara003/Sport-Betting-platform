@@ -21,7 +21,7 @@ const LiveBetting = () => {
             <div className="md:w-1/2 md:ml-8 text-center md:text-left">
               <h1 className="text-white text-3xl font-bold">Live Betting</h1>
               <p className="text-gray-200 mt-4">
-                Join SolBet for live betting excitement on your favorite sports. Whether it’s a last-minute football match, a crucial basketball game, or a thrilling volleyball showdown, our platform lets you place bets as the action unfolds. Stay ahead with real-time odds and dynamic betting options. Experience the rush of live betting with SolBet, where every moment counts!
+                Join HotOdds for live betting excitement on your favorite sports. Whether it’s a last-minute football match, a crucial basketball game, or a thrilling volleyball showdown, our platform lets you place bets as the action unfolds. Stay ahead with real-time odds and dynamic betting options. Experience the rush of live betting with HotOdds, where every moment counts!
               </p>
             </div>
           </div>
