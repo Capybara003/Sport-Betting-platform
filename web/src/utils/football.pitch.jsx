@@ -1,5 +1,5 @@
 import React from 'react';
-import Player from './Player';
+import Player from './player';
 
 const FootballPitch = ({ homeTeam, homeFormation, homeStartXI, awayTeam, awayFormation, awayStartXI }) => {
   // Ensure both formations are valid strings
