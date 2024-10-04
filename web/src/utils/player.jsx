@@ -1,5 +1,3 @@
-// src/components/Player.js
-
 import React from 'react';
 
 const Player = ({ x, y, name, number, color, border, numberColor }) => {
