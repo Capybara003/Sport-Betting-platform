@@ -15,7 +15,7 @@ export default function H2HTable({ h2h }) {
   const columns = [
     { id: "team", label: "Team", minWidth: 200 },
     { id: "date", label: "Date", minWidth: 100 },
-    { id: "referee", label: "Referee", minWidth: 200 },
+    { id: "referee", label: "Referee", minWidth: 400 },
     { id: "venue", label: "Venue", minWidth: 300 },
     { id: "goals", label: "Goals", minWidth: 100 },
     { id: "league", label: "League", minWidth: 150 },
@@ -55,7 +55,7 @@ export default function H2HTable({ h2h }) {
     .flat(); // Flatten to make it a single array
 
   // Sort rows by season in ascending order
-  const sortedRows = rows.sort((a, b) => a.season - b.season);
+  const sortedRows = rows?.sort((a, b) => a.season - b.season);
 
   return (
     <Box

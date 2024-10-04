@@ -190,3 +190,40 @@ export const fetchTicketMatch = async(id:string) => {
     console.log(error)
   }
 }
+
+export const createTicket = async(body:any) => {
+  try {
+    const publickey = localStorage.getItem("publickey")
+    const res = await fetch(`${baseurl}/ticket/create`, {
+      method: "POST",
+      headers: {
+        secret: `${secret}`,
+        "Content-Type": "application/json",
+        publickey: `${publickey}`
+      },
+      body:JSON.stringify(body)
+    })
+    const data = await res.json();
+    return data;
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+export const fetchOdds = async(fixId:string) => {
+  try {
+    const publickey = localStorage.getItem("publickey")
+    const res = await fetch(`${baseurl}/sport/odds/${fixId}`, {
+      method: "GET",
+      headers: {
+        secret: `${secret}`,
+        "Content-Type": "application/json",
+        publickey: `${publickey}`
+      },
+    })
+    const data = await res.json();
+    return data;
+  } catch (error) {
+    console.log(error)
+  }
+}

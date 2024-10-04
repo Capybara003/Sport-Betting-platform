@@ -18,7 +18,6 @@ export default function Football() {
   const [loading, setLoading] = useState(false);
   const [loadingFixtures, setLoadingFixtures] = useState(false);
 
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -137,6 +136,7 @@ export default function Football() {
           });
 
           // Limit the number of leagues displayed
+          
           if (topFiveCountries.includes(countryName)) {
             countryObj.leagues = countryObj.leagues.slice(0, 5);
           } else {
@@ -145,8 +145,11 @@ export default function Football() {
         });
 
         setLeagues(countriesWithLeagues);
+        const firstLeague = countriesWithLeagues[0].leagues
+        console.log(countriesWithLeagues)
+        await handleCountryLeague(firstLeague, countriesWithLeagues[0].country.name)
       } else {
-        alert(data.message)
+        alert(data.message);
       }
     } catch (error) {
     } finally {
@@ -155,27 +158,28 @@ export default function Football() {
   };
 
   // Handle tab clicks and set leagues for the selected country
-  const handleCountryLeague = async (leagues) => {
-   try {
-    setLoadingFixtures(true)
-    let leagueArray = [];
-    leagues.map((league) => {
-      const leagueData = {
-        leagueId: league.id,
-        name: league.name,
-      };
-      leagueArray.push(leagueData);
-    });
+  const handleCountryLeague = async (leagues, country) => {
+    try {
+      setLoadingFixtures(true);
+      let leagueArray = [];
+      leagues.map((league) => {
+        const leagueData = {
+          country: country,
+          leagueId: league.id,
+          name: league.name,
+        };
+        leagueArray.push(leagueData);
+      });
 
-    const body = {
-      data: leagueArray,
-    };
-    const data = await fetchFixtures(body)
-    setFeatures(data.data);
-   } catch (error) {
-   }finally{
-    setLoadingFixtures(false)
-  }
+      const body = {
+        data: leagueArray,
+      };
+      const data = await fetchFixtures(body);
+      setFeatures(data.data);
+    } catch (error) {
+    } finally {
+      setLoadingFixtures(false);
+    }
   };
 
   useEffect(() => {
@@ -184,31 +188,33 @@ export default function Football() {
 
   return (
     <Layout>
-      {!loading && <div className="flex flex-row overflow-hidden h-[100vh]">
-        <div className="w-full">
-          <Box sx={{ maxWidth: { xs: 320, sm: "100%" }, bgcolor: "#330034" }}>
-            <Tabs
-              value={value}
-              onChange={handleChange}
-              variant="scrollable"
-              scrollButtons="auto"
-              aria-label="scrollable auto tabs example"
-              sx={{ color: "orangered", fontSize: "50px" }}
-            >
-              {leagues &&
-                leagues.map((countryObj, index) => (
-                  <Tab
-                    key={countryObj.country.name}
-                    label={countryObj.country.name}
-                    onClick={() => handleCountryLeague(countryObj.leagues)} // Pass the leagues when the tab is clicked
-                    sx={{ color: "white" }}
-                  />
-                ))}
-            </Tabs>
-          </Box>
-          <VerticalTabs fixtures={features} />
+      {!loading && (
+        <div className="flex flex-row overflow-hidden h-[100vh]">
+          <div className="w-full">
+            <Box sx={{ maxWidth: { xs: 320, sm: "100%" }, bgcolor: "#330034" }}>
+              <Tabs
+                value={value}
+                onChange={handleChange}
+                variant="scrollable"
+                scrollButtons="auto"
+                aria-label="scrollable auto tabs example"
+                sx={{ color: "orangered", fontSize: "50px" }}
+              >
+                {leagues &&
+                  leagues.map((countryObj, index) => (
+                    <Tab
+                      key={countryObj.country.name}
+                      label={countryObj.country.name}
+                      onClick={() => handleCountryLeague(countryObj.leagues, countryObj.country.name)} // Pass the leagues when the tab is clicked
+                      sx={{ color: "white" }}
+                    />
+                  ))}
+              </Tabs>
+            </Box>
+            <VerticalTabs fixtures={features} />
+          </div>
         </div>
-      </div>}
+      )}
       <Spinner loading={loading} />
     </Layout>
   );

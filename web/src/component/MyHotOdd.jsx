@@ -9,9 +9,7 @@ import { useTheme } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
-import { color } from "framer-motion";
 import { formatDate } from "../utils/date.formatter";
 
 function TabPanel(props) {
@@ -96,6 +94,7 @@ export default function MyHotOdds() {
 
   const handleSelectTicket = async (ticket) => {
     const data = await fetchTicketMatch(ticket.id);
+    console.log(data)
     setBets(data);
     handleOpen();
   };
@@ -160,7 +159,7 @@ export default function MyHotOdds() {
         aria-describedby="keep-mounted-modal-description"
       >
         <Box sx={style}>
-         {bet && bet.bets.map((bet) => {
+         {bet && bet?.bets.map((bet) => {
            const dates = formatDate(bet.matchDate)
             return <div className="bg-[#1D001B] py-5 px-3" key={bet.id}>
              <div className="flex justify-between">
@@ -179,11 +178,10 @@ export default function MyHotOdds() {
                  variant="body1"
                  marginLeft="10px"
                  color="white"
-                 style={{ opacity: 0.2 }}
+                 style={{ opacity: 1 }}
                >
                  {bet.option}
                </Typography>
-               <b></b>
                <div className="flex">
                  <Avatar
                    alt="League Logo"
