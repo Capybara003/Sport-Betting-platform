@@ -10,7 +10,9 @@ import { fetchFootballTeams } from "../action/action";
 import statistics from "../stats.json";
 import TeamPitch from "../utils/insertTeam";
 import FullTableWith from "../component/stats";
-import LineUpTable from "../component/lineup"
+import LineUpTable from "../component/lineup";
+import Spiner from "../component/spinner";
+import { useState } from "react";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -52,35 +54,42 @@ function a11yProps(index) {
 export default function VerticalTabs({ fixtures }) {
   const [value, setValue] = React.useState(0);
   const [lineup, setLineUp] = React.useState(null);
-  const [stats, setStats] = React.useState(null)
-  const [h2h, setH2h] = React.useState(null)
+  const [stats, setStats] = React.useState(null);
+  const [h2h, setH2h] = React.useState(null);
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
   const handleTeamId = async (fixture) => {
-    const firstTeam = {
-      teamId: fixture.teams.home.id,
-      teamName: fixture.teams.home.name,
-    };
+    try {
+      setLoading(true);
+      const firstTeam = {
+        teamId: fixture.teams.home.id,
+        teamName: fixture.teams.home.name,
+      };
 
-    const secondTeam = {
-      teamId: fixture.teams.away.id,
-      teamName: fixture.teams.away.name,
-    };
+      const secondTeam = {
+        teamId: fixture.teams.away.id,
+        teamName: fixture.teams.away.name,
+      };
 
-    const body = {
-      fixtureId: fixture.fixture.id,
-      league: fixture.league.id,
-      contoury: fixture.league.country,
-      teams: [firstTeam, secondTeam],
-    };
+      const body = {
+        fixtureId: fixture.fixture.id,
+        league: fixture.league.id,
+        contoury: fixture.league.country,
+        teams: [firstTeam, secondTeam],
+      };
 
-    setLineUp(statistics.data.lineup);
-    setStats(statistics.data.statistics)
-    setH2h(statistics.data.head2head)
-    // console.log(statistics.data.head2head)
+      const statistics = await fetchFootballTeams(body);
+      setLineUp(statistics.data.lineup);
+      setStats(statistics.data.statistics);
+      setH2h(statistics.data.head2head);
+    } catch (error) {
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -107,7 +116,7 @@ export default function VerticalTabs({ fixtures }) {
             <div className="flex">
               <Avatar
                 alt="League Logo"
-                src={league.matches.response[0].league.logo}
+                src={league.matches.response[0]?.league.logo}
                 sx={{ width: 28, height: 28, bgcolor: "#fff" }}
               />
               <Typography variant="body1" marginLeft="10px" color="white">
@@ -179,9 +188,9 @@ export default function VerticalTabs({ fixtures }) {
         sx={{ borderRight: 1, borderColor: "divider" }}
         orientation="vertical"
       >
-      <FullTableWith stats={stats} lineup={lineup} h2h={h2h}/>
-
+        {!loading &&  <FullTableWith stats={stats} lineup={lineup} h2h={h2h} />}
       </TabPanel>
+      {loading && <Spiner loading={loading} />}
     </Box>
   );
 }

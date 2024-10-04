@@ -1,4 +1,4 @@
-const baseurl = "https://gd4rlkmw-8081.uks1.devtunnels.ms/api/v1";
+const baseurl = "http://localhost:8081/api/v1";
 const secret = "x3FGFJ4829033HGBSOGGGSMVDDHq";
 
 interface IFixtures {
@@ -18,12 +18,18 @@ interface ITeamsBody {
   awayTeamName: string,
  }
 
+ 
+interface ITicketPay {
+  ticketId: string;
+  amount: number;
+  hash: string;
+}
+
 export const regUser = async (publickey: string) => {
   try {
     const body = {
       address: publickey,
     };
-    console.log(body);
     const res = await fetch(`${baseurl}/auth/set-identity`, {
       method: "POST",
       headers: {
@@ -40,7 +46,7 @@ export const regUser = async (publickey: string) => {
   }
 };
 
-export const fetchLeagues = async (publickey: string) => {
+export const fetchLeagues = async () => {
   try {
     const res = await fetch(`${baseurl}/sport/leagues`, {
       method: "GET",
@@ -104,6 +110,79 @@ export const fetchFootballTeams = async(body:ITeamsBody) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(body)
+    })
+    const data = await res.json();
+    return data;
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+export const fetchTicket = async() => {
+  try {
+    const publickey = localStorage.getItem("publickey")
+    const res = await fetch(`${baseurl}/ticket/fetch-tickets`, {
+      method: "GET",
+      headers: {
+        secret: `${secret}`,
+        "Content-Type": "application/json",
+        publickey: `${publickey}`
+      }
+    })
+    const data = await res.json();
+    return data;
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+export const fetchPaidTicket = async() => {
+  try {
+    const publickey = localStorage.getItem("publickey")
+    const res = await fetch(`${baseurl}/ticket/fetch-my-paid-tickets`, {
+      method: "GET",
+      headers: {
+        secret: `${secret}`,
+        "Content-Type": "application/json",
+        publickey: `${publickey}`
+      }
+    })
+    const data = await res.json();
+    return data;
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+export const payTicket = async(body:ITicketPay) => {
+  try {
+    const publickey = localStorage.getItem("publickey")
+    const res = await fetch(`${baseurl}/ticket/pay-ticket`, {
+      method: "POST",
+      headers: {
+        secret: `${secret}`,
+        "Content-Type": "application/json",
+        publickey: `${publickey}`
+      },
+      body: JSON.stringify(body)
+    })
+    const data = await res.json();
+    return data;
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+export const fetchTicketMatch = async(id:string) => {
+  try {
+    const publickey = localStorage.getItem("publickey")
+    const res = await fetch(`${baseurl}/ticket/fetch-ticket/${id}`, {
+      method: "GET",
+      headers: {
+        secret: `${secret}`,
+        "Content-Type": "application/json",
+        publickey: `${publickey}`
+      }
     })
     const data = await res.json();
     return data;

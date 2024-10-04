@@ -14,5 +14,4 @@ export function formatDate(dateString: string) {
   }
   
   const formatted = formatDate('2024-10-05T11:30:00+00:00');
-  console.log(formatted); // Output: "2024-10-05 11am"
   

@@ -11,24 +11,25 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
 export default function H2HTable({ h2h }) {
-  console.log("headtohead", h2h.response[0]);
+  // Columns for the table
   const columns = [
     { id: "team", label: "Team", minWidth: 200 },
     { id: "date", label: "Date", minWidth: 100 },
-    { id: "status", label: "Status", minWidth: 100 },
     { id: "referee", label: "Referee", minWidth: 200 },
-    { id: "venue", label: "Venue", minWidth: 100 },
+    { id: "venue", label: "Venue", minWidth: 300 },
     { id: "goals", label: "Goals", minWidth: 100 },
-    { id: "league", label: "League", minWidth: 100 },
+    { id: "league", label: "League", minWidth: 150 },
     { id: "score", label: "Score", minWidth: 100 },
     { id: "season", label: "Season", minWidth: 100 },
   ];
 
+  // Format date function
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     return date.toLocaleDateString();
   };
 
+  // Function to create rows for both home and away teams
   const createData = (team, matchData) => {
     return {
       team: {
@@ -36,7 +37,6 @@ export default function H2HTable({ h2h }) {
         name: team.name,
       },
       date: formatDate(matchData.fixture.date),
-      status: matchData.fixture.status.long,
       referee: matchData.fixture.referee,
       venue: matchData.fixture.venue.name,
       goals: team === matchData.teams.home ? matchData.goals.home : matchData.goals.away,
@@ -46,15 +46,22 @@ export default function H2HTable({ h2h }) {
     };
   };
 
-  const rows = [
-    createData(h2h.response[0].teams.home, h2h.response[0]),
-    createData(h2h.response[0].teams.away, h2h.response[0]),
-  ];
+  // Create rows for both teams (home and away) in the array
+  const rows = h2h?.response
+    .map((match) => [
+      createData(match.teams.home, match),
+      createData(match.teams.away, match),
+    ])
+    .flat(); // Flatten to make it a single array
+
+  // Sort rows by season in ascending order
+  const sortedRows = rows.sort((a, b) => a.season - b.season);
 
   return (
     <Box
       sx={{
         width: "100%",
+        height: "150%",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -63,6 +70,7 @@ export default function H2HTable({ h2h }) {
       <Paper
         sx={{
           width: "100%",
+          height: "100%",
           maxWidth: "900px",
           overflow: "hidden",
           mb: 4,
@@ -76,7 +84,6 @@ export default function H2HTable({ h2h }) {
                 {columns.map((column) => (
                   <TableCell
                     key={column.id}
-                    align={column.align}
                     style={{
                       minWidth: column.minWidth,
                       color: "#fff",
@@ -90,7 +97,7 @@ export default function H2HTable({ h2h }) {
               </TableRow>
             </TableHead>
             <TableBody>
-              {rows.map((row, index) => (
+              {sortedRows.map((row, index) => (
                 <TableRow key={index}>
                   <TableCell style={{ display: "flex", alignItems: "center" }}>
                     <Avatar
@@ -106,7 +113,7 @@ export default function H2HTable({ h2h }) {
                     <Typography style={{ color: "#fff" }}>{row.team.name}</Typography>
                   </TableCell>
                   {columns.slice(1).map((column) => (
-                    <TableCell key={column.id} align={column.align} style={{ color: "#fff" }}>
+                    <TableCell key={column.id} style={{ color: "#fff" }}>
                       {row[column.id]}
                     </TableCell>
                   ))}

@@ -72,7 +72,7 @@ export default function FullWidthTabs({stats, lineup, h2h}) {
         {stats && <StatsTable stats={stats}/>}
       </TabPanel>
       <TabPanel value={value} index={1} dir={theme.direction}>
-        {lineup && <LineupTable lineup={lineup}/> }
+        {lineup && lineup.response.length > 0 && <LineupTable lineup={lineup}/> }
       </TabPanel>
       <TabPanel value={value} index={2} dir={theme.direction}>
         <H2HTable h2h={h2h}/>

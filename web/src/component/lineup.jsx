@@ -11,8 +11,13 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box"; // For block layout
 
 export default function LineUpTable({ lineup }) {
-  const teamA = lineup.response[0];
-  const teamB = lineup.response[1];
+  if(!lineup.response.length < 0) {
+    return (
+      <h1>No Line up</h1>
+    )
+  }
+  const teamA = lineup?.response[0];
+  const teamB = lineup?.response[1];
 
   const columns = (team) => [
     {
@@ -21,10 +26,10 @@ export default function LineUpTable({ lineup }) {
         <div className="flex">
           <Avatar
             alt="Team Logo"
-            src={team.team.logo}
+            src={team?.team.logo}
             sx={{ width: 28, height: 28, bgcolor: "#fff", marginRight: "5px" }}
           />
-          <Typography>{team.team.name}</Typography>
+          <Typography>{team?.team.name}</Typography>
         </div>
       ),
       minWidth: 170,
@@ -78,7 +83,7 @@ export default function LineUpTable({ lineup }) {
               >
                 StartXI
               </TableCell>
-              {teamA.startXI.map((row) => (
+              {teamA?.startXI.map((row) => (
                 <TableRow
                   hover
                   role="checkbox"
@@ -114,7 +119,7 @@ export default function LineUpTable({ lineup }) {
               >
                 Subtitutes
               </TableCell>
-              {teamA.substitutes.map((row) => (
+              {teamA?.substitutes.map((row) => (
                 <TableRow
                   hover
                   role="checkbox"
@@ -207,7 +212,7 @@ export default function LineUpTable({ lineup }) {
               >
                 StartXI
               </TableCell>
-              {teamB.startXI.map((row) => (
+              {teamB?.startXI.map((row) => (
                 <TableRow
                   hover
                   role="checkbox"
