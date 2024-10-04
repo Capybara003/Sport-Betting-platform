@@ -9,9 +9,7 @@ import { useTheme } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
-import { color } from "framer-motion";
 import { formatDate } from "../utils/date.formatter";
 
 function TabPanel(props) {
@@ -52,7 +50,7 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 400,
+  width: 800, // Increase the width of the modal
   bgcolor: "#330034",
   border: "2px solid #000",
   boxShadow: 24,
@@ -96,9 +94,11 @@ export default function MyHotOdds() {
 
   const handleSelectTicket = async (ticket) => {
     const data = await fetchTicketMatch(ticket.id);
+    console.log(data);
     setBets(data);
     handleOpen();
   };
+
   return (
     <Box sx={{ bgcolor: "", width: "100%" }}>
       <div className="overflow-x-auto no-scrollbar mt-3 flex space-x-8 sm:grid sm:grid-cols-3 w-full">
@@ -126,9 +126,7 @@ export default function MyHotOdds() {
                   </div>
 
                   <div>
-                    <h3 className="sm:font-base text-[#927c91]">
-                      Active Match
-                    </h3>
+                    <h3 className="sm:font-base text-[#927c91]">Active Match</h3>
                     <h3 className="sm:font-base text-white">
                       {ticket.activeMatch}
                     </h3>
@@ -160,50 +158,63 @@ export default function MyHotOdds() {
         aria-describedby="keep-mounted-modal-description"
       >
         <Box sx={style}>
-         {bet && bet.bets.map((bet) => {
-           const dates = formatDate(bet.matchDate)
-            return <div className="bg-[#1D001B] py-5 px-3" key={bet.id}>
-             <div className="flex justify-between">
-               <div className="flex">
-                 <Avatar
-                   alt="League Logo"
-                   src={bet.firstTeamLogo}
-                   sx={{ width: 28, height: 28, bgcolor: "#fff" }}
-                 />
-                 <Typography variant="body1" marginLeft="10px" color="white">
-                   {bet.firstTeam}
-                 </Typography>
-               </div>
- 
-               <Typography
-                 variant="body1"
-                 marginLeft="10px"
-                 color="white"
-                 style={{ opacity: 0.2 }}
-               >
-                 {bet.option}
-               </Typography>
-               <b></b>
-               <div className="flex">
-                 <Avatar
-                   alt="League Logo"
-                   src={bet.secondTeamLogo}
-                   sx={{ width: 28, height: 28, bgcolor: "#fff" }}
-                 />
-                 <Typography variant="body1" marginLeft="10px" color="white">
-                   {bet.secondTeam}
-                 </Typography>
-               </div>
-             </div>
- 
-             <b
-               className="flex justify-center align-center"
-               style={{ opacity: 0.2 }}
-             >
-               {dates}
-             </b>
-           </div>
-         })}
+          <div className="grid grid-cols-2 gap-4"> {/* Add grid and two-column layout */}
+            {bet &&
+              bet?.bets.map((bet) => {
+                const dates = formatDate(bet.matchDate);
+                return (
+                  <div className="bg-[#1D001B] py-5 px-3" key={bet.id}>
+                    <div className="flex justify-between">
+                      <div className="flex">
+                        <Avatar
+                          alt="League Logo"
+                          src={bet.firstTeamLogo}
+                          sx={{ width: 28, height: 28, bgcolor: "#fff" }}
+                        />
+                        <Typography
+                          variant="body2"
+                          marginLeft="10px"
+                          color="white"
+                        >
+                          {bet.firstTeam}
+                        </Typography>
+                      </div>
+
+                      <Typography
+                        variant="body2"
+                        marginLeft="10px"
+                        color="white"
+                        style={{ opacity: 1 }}
+                      >
+                        {bet.option}
+                      </Typography>
+
+                      <div className="flex">
+                        <Avatar
+                          alt="League Logo"
+                          src={bet.secondTeamLogo}
+                          sx={{ width: 28, height: 28, bgcolor: "#fff" }}
+                        />
+                        <Typography
+                          variant="body2"
+                          marginLeft="10px"
+                          color="white"
+                        >
+                          {bet.secondTeam}
+                        </Typography>
+                      </div>
+                    </div>
+
+                    <b
+                      className="flex justify-center align-center"
+                      style={{ opacity: 0.2 }}
+                    >
+                      {dates}
+                    </b>
+                  </div>
+                );
+              })}
+          </div>
         </Box>
       </Modal>
 

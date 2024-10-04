@@ -57,6 +57,8 @@ export default function VerticalTabs({ fixtures }) {
   const [stats, setStats] = React.useState(null);
   const [h2h, setH2h] = React.useState(null);
   const [loading, setLoading] = useState(false);
+  const [sendFixture, setSendFixtures] = useState(null)
+  const [fixId, setFixId] = useState(null)
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -74,7 +76,8 @@ export default function VerticalTabs({ fixtures }) {
         teamId: fixture.teams.away.id,
         teamName: fixture.teams.away.name,
       };
-
+     
+      console.log("league", fixture.fixture.id)
       const body = {
         fixtureId: fixture.fixture.id,
         league: fixture.league.id,
@@ -82,7 +85,12 @@ export default function VerticalTabs({ fixtures }) {
         teams: [firstTeam, secondTeam],
       };
 
+      const team = fixture
+
       const statistics = await fetchFootballTeams(body);
+      console.log("stats", fixture,fixture.id)
+      setSendFixtures(fixture)
+      setFixId(fixture.fixture.id)
       setLineUp(statistics.data.lineup);
       setStats(statistics.data.statistics);
       setH2h(statistics.data.head2head);
@@ -188,7 +196,7 @@ export default function VerticalTabs({ fixtures }) {
         sx={{ borderRight: 1, borderColor: "divider" }}
         orientation="vertical"
       >
-        {!loading &&  <FullTableWith stats={stats} lineup={lineup} h2h={h2h} />}
+        {!loading &&  <FullTableWith stats={stats} lineup={lineup} h2h={h2h} sendFixture={sendFixture} fixId={fixId}/>}
       </TabPanel>
       {loading && <Spiner loading={loading} />}
     </Box>
