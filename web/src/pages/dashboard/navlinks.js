@@ -11,7 +11,6 @@ const links = [
   { name: 'Home', href: '/', icon: IoHomeOutline },
   { name: 'Football', href: '/dashboard/Football', icon: IoArchiveOutline },
   { name: 'HotOdds', href: '/dashboard/HotOdds', icon: IoArchiveOutline },
-  { name: 'Crypto Price Betting', href: '/dashboard/Crypto', icon: BsGift },
   { name: 'Profile', href: '/dashboard/Profile', icon: IoSettingsOutline },
 ];
 
