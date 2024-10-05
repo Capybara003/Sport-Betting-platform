@@ -25,7 +25,7 @@ const HeroSection = () => {
         </div>
         <div className="text-center text-4xl text-white font-bold">
           <h1>
-          Game that help you place<b className="text-purple-700"> winning </b> bets.</h1>
+          Game insights that help you place<b className="text-purple-700"> winning </b> bets.</h1>
         </div>
         <div className="text-center px-10 md:px-56 pt-2 text-white font-bold">
           Join the revolution in betting and experience a platform where innovation meets reliability. Sign up for HotOdds today and place your bets in a secure, fast, and decentralized environment.
