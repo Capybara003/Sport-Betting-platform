@@ -68,6 +68,7 @@ export default function HotOdds() {
     try {
       setLoading(true)
       const realData = await fetchTicket()
+      console.log(realData)
       setTickets(realData);
     } catch (error) {
       console.error("Error fetching tickets:", error);
@@ -84,6 +85,7 @@ export default function HotOdds() {
     try {
       const transaction = new web3.Transaction();
         const recipient = new web3.PublicKey(ticket.address);
+        console.log(ticket.address)
         const sendSolInstruction = web3.SystemProgram.transfer({
         fromPubkey: publicKey,
         toPubkey: recipient,
@@ -122,7 +124,7 @@ export default function HotOdds() {
       </AppBar>
       <TabPanel value={value} index={0} dir={theme.direction}>
       <div className="overflow-x-auto no-scrollbar mt-3 flex space-x-8 sm:grid sm:grid-cols-3 w-full">
-        {!loading && tickets?.data.tickets.map((ticket) => (
+        {!loading && tickets?.data?.tickets.length > 0 && tickets?.data.tickets.map((ticket) => (
           <section
             key={ticket.id} 
             className="my-6 mx-4 border border-slate-400 cursor-pointer rounded-lg bg-[#2f0a2f] w-[250px] h-[221px] sm:w-[280px] text-white sm:h-[221px]"
@@ -164,6 +166,8 @@ export default function HotOdds() {
             </div>
           </section>
         ))}
+
+        <div>{!loading && tickets?.data?.tickets.length < 1 && <h1>No Current Ticket</h1>}</div>
       </div>
       </TabPanel>
       <TabPanel value={value} index={1} dir={theme.direction}>

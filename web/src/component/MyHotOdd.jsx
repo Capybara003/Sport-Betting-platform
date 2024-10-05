@@ -103,7 +103,7 @@ export default function MyHotOdds() {
     <Box sx={{ bgcolor: "", width: "100%" }}>
       <div className="overflow-x-auto no-scrollbar mt-3 flex space-x-8 sm:grid sm:grid-cols-3 w-full">
         {!loading &&
-          tickets?.data.tickets.map((ticket) => (
+          tickets?.data?.tickets.map((ticket) => (
             <section
               key={ticket.id}
               className="my-6 mx-4 border border-slate-400 cursor-pointer rounded-lg bg-[#2f0a2f] w-[250px] h-[221px] sm:w-[280px] text-white sm:h-[221px]"

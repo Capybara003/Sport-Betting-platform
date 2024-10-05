@@ -3,12 +3,19 @@ import { Typography, Grid, Card, CardContent, Container, Box } from "@mui/materi
 import {fetchOdds} from "../action/action"
 import Spiner from "../component/spinner"
 import {useEffect, useState} from "react"
+import Toast from "./Toast"
+import { SnackbarProvider, useSnackbar } from 'notistack'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 export default function Odds({ team, fixId }) {
   const [loading, setLoading] = useState(false)
   const [odds, setOdds] = useState(null)
-    console.log(team);
-  console.log(fixId)
+  const [show, setShow] = useState(false)
+  const { enqueueSnackbar, closeSnackbar } = useSnackbar()
+  // const notify = () => ;
+
   const fixtureId = team?.fixture.id;
   
   useEffect(() => {
@@ -36,7 +43,6 @@ export default function Odds({ team, fixId }) {
   const { logo: secondTeamLogo, name: secondTeam } = away;
   const { league, fixture, bookmakers } = odds.response[0];
   const bookmaker = bookmakers[0];
-
   const sortedBets = bookmaker.bets.sort((a, b) => {
     if (a.name === "Match Winner") return -1;
     if (a.name === "Double Chance - First Half") return -1;
@@ -45,7 +51,6 @@ export default function Odds({ team, fixId }) {
 
   const handleOddClick = (value, odd) => {
     const existingData = localStorage.getItem("book");
-
     const newOdd = {
       option: value,
       firstTeam,
@@ -53,10 +58,8 @@ export default function Odds({ team, fixId }) {
       secondTeam,
       secondTeamLogo,
       matchDate: team.fixture.date,
-      fixtureId: 12333,
+      fixtureId,
     };
-
-    console.log(newOdd);
 
     if (existingData) {
       const oddsArray = JSON.parse(existingData);
@@ -73,6 +76,8 @@ export default function Odds({ team, fixId }) {
     } else {
       localStorage.setItem("book", JSON.stringify([newOdd]));
     }
+    enqueueSnackbar('I love hooks')
+    alert("Add odd")
   };
 
   return (
@@ -137,6 +142,7 @@ export default function Odds({ team, fixId }) {
       ))}
 
       <Spiner loading={loading}/>
+      {show && <Toast message={"Added to book"}/>}
     </Container>
   );
 }

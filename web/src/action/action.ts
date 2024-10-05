@@ -57,6 +57,7 @@ export const fetchLeagues = async () => {
     });
 
     const data = await res.json();
+    console.log("from", data)
     return data;
   } catch (error) {
     console.log(error)
