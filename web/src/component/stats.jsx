@@ -11,6 +11,15 @@ import LineupTable from "../component/lineup";
 import H2HTable from "../component/HeadToHead";
 import Odds from "../component/Odds"
 import MyBookMark from "../component/MyBookMark"
+import Zoom from '@mui/material/Zoom';
+import Fab from '@mui/material/Fab';
+import { green } from '@mui/material/colors';
+import AddIcon from '@mui/icons-material/Add';
+import EditIcon from '@mui/icons-material/Edit';
+import UpIcon from '@mui/icons-material/KeyboardArrowUp';
+import NavigationIcon from '@mui/icons-material/Navigation';
+import SpringModal from "../component/Coming_Soon"
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -44,13 +53,60 @@ function a11yProps(index) {
   };
 }
 
+const fabStyle = {
+  position: 'absolute',
+  bottom: 16,
+  right: 16,
+};
+
+const fabGreenStyle = {
+  color: 'common.white',
+  bgcolor: green[500],
+  '&:hover': {
+    bgcolor: green[600],
+  },
+};
+
 export default function FullWidthTabs({ stats, lineup, h2h, sendFixture, fixId }) {
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
+  const [open, setOpen] = React.useState(false)
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  const handleClose =() => {
+    setOpen(false)
+  }
+
+
+  const transitionDuration = {
+    enter: theme.transitions.duration.enteringScreen,
+    exit: theme.transitions.duration.leavingScreen,
+  };
+
+  const fabs = [
+    {
+      color: 'primary',
+      sx: fabStyle,
+      icon: <AddIcon />,
+      label: 'Add',
+    },
+    {
+      color: 'secondary',
+      sx: fabStyle,
+      icon: <EditIcon />,
+      label: 'Edit',
+    },
+    {
+      color: 'inherit',
+      sx: { ...fabStyle, ...fabGreenStyle },
+      icon: <UpIcon />,
+      label: 'Expand',
+    },
+  ];
+
 
   return (
     <Box sx={{ bgcolor: "", width: 720 }}>
@@ -90,6 +146,26 @@ export default function FullWidthTabs({ stats, lineup, h2h, sendFixture, fixId }
       <TabPanel value={value}  index={4} dir={theme.direction}>
         <MyBookMark />
       </TabPanel>
+
+      {
+         fabs.map((fab, index) => (
+          <Zoom
+            key={fab.color}
+            in={value === index}
+            timeout={transitionDuration}
+            style={{
+              transitionDelay: `${value === index ? transitionDuration.exit : 0}ms`,
+            }}
+            unmountOnExit
+          >
+            <Fab variant="extended" sx={fab.sx} aria-label={fab.label} color={fab.color} onClick={() => setOpen(true)}>
+            <NavigationIcon sx={{ mr: 1 }} />
+             AI ASSISTANT
+            </Fab>
+          </Zoom>
+        ))
+      }
+     {open && <SpringModal openSpring={open} handleClose={handleClose}/>}
     </Box>
   );
 }

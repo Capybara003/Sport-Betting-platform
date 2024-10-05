@@ -88,7 +88,6 @@ export default function VerticalTabs({ fixtures }) {
       const team = fixture
 
       const statistics = await fetchFootballTeams(body);
-      console.log("stats", fixture,fixture.id)
       setSendFixtures(fixture)
       setFixId(fixture.fixture.id)
       setLineUp(statistics.data.lineup);

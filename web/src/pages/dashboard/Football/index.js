@@ -26,6 +26,7 @@ export default function Football() {
     try {
       setLoading(true);
       const data = await fetchLeagues();
+      console.log(data)
       if (data.status < 202) {
         const datas = data.data.data.response;
         const countriesWithLeagues = [];

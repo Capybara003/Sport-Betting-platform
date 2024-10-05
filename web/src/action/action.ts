@@ -1,4 +1,4 @@
-const baseurl = "http://localhost:8081/api/v1";
+const baseurl = "https://hotodds-backend.onrender.com/api/v1";
 const secret = "x3FGFJ4829033HGBSOGGGSMVDDHq";
 
 interface IFixtures {
@@ -57,6 +57,7 @@ export const fetchLeagues = async () => {
     });
 
     const data = await res.json();
+    console.log("from", data)
     return data;
   } catch (error) {
     console.log(error)
