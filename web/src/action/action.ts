@@ -1,4 +1,4 @@
-const baseurl = "https://hotodds-backend.onrender.com";
+const baseurl = "https://hotodds-backend.onrender.com/api/v1";
 const secret = "x3FGFJ4829033HGBSOGGGSMVDDHq";
 
 interface IFixtures {
