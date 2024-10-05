@@ -1,4 +1,4 @@
-const baseurl = "https://29a7-197-210-54-97.ngrok-free.app/api/v1";
+const baseurl = "https://hotodds-backend.onrender.com";
 const secret = "x3FGFJ4829033HGBSOGGGSMVDDHq";
 
 interface IFixtures {
