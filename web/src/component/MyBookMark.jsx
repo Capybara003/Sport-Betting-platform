@@ -14,6 +14,7 @@ import {
   Radio,
   RadioGroup,
   TextField,
+  FormControlLabel,  // Import FormControlLabel
 } from "@mui/material";
 import Backdrop from "@mui/material/Backdrop";
 import { createTicket } from "../action/action";
@@ -242,21 +243,17 @@ export default function MyBookMark() {
                     onChange={handleRadioChange} // Set the radio value
                     sx={{ color: "white" }}
                   >
-                    <Radio
+                    <FormControlLabel
                       value="YES"
+                      control={<Radio sx={{ color: "white" }} />}
                       label="YES"
-                      variant="outlined"
-                      sx={{ color: "white" }}
-                      checkedIcon={<span style={{ color: "white" }}>●</span>}
-                      icon={<span style={{ color: "white" }}>○</span>}
+                      sx={{ color: "white", alignItems: "left" }} // Align left
                     />
-                    <Radio
+                    <FormControlLabel
                       value="NO"
+                      control={<Radio sx={{ color: "white" }} />}
                       label="NO"
-                      variant="soft"
-                      sx={{ color: "white" }}
-                      checkedIcon={<span style={{ color: "white" }}>●</span>}
-                      icon={<span style={{ color: "white" }}>○</span>}
+                      sx={{ color: "white", alignItems: "left" }} // Align left
                     />
 
                     {/* Conditionally render the TextField only if "yes" is selected */}
@@ -284,14 +281,15 @@ export default function MyBookMark() {
                   </RadioGroup>
                 </FormControl>
 
-                <Button onClick={() => handleTicketBooking()}>
+             
+              </Box>
+              <Button onClick={() => handleTicketBooking()}>
                   {loading ? "Loading..." : "Submit"}
                 </Button>
-              </Box>
             </Box>
           </Fade>
         </Modal>
       </div>
-    </Container>
+      </Container>
   );
 }
