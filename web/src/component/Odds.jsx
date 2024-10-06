@@ -1,43 +1,35 @@
 import { Typography, Grid, Card, CardContent, Container, Box } from "@mui/material";
-// import odds from "../odds.json";
-import {fetchOdds} from "../action/action"
-import Spiner from "../component/spinner"
-import {useEffect, useState} from "react"
-import Toast from "./Toast"
-import { SnackbarProvider, useSnackbar } from 'notistack'
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
+import { fetchOdds } from "../action/action";
+import Spinner from "../component/spinner";
+import { useEffect, useState } from "react";
+import CustomSnackbar from '../component/Snackbar'; // Import the CustomSnackbar component
 
 export default function Odds({ team, fixId }) {
-  const [loading, setLoading] = useState(false)
-  const [odds, setOdds] = useState(null)
-  const [show, setShow] = useState(false)
-  const { enqueueSnackbar, closeSnackbar } = useSnackbar()
-  // const notify = () => ;
+  const [loading, setLoading] = useState(false);
+  const [odds, setOdds] = useState(null);
+  const [snackbarOpen, setSnackbarOpen] = useState(false); // Snackbar open state
+  const [snackbarMessage, setSnackbarMessage] = useState(""); 
 
   const fixtureId = team?.fixture.id;
   
   useEffect(() => {
-    handleFetchOdd()
-  }, [])
+    handleFetchOdd();
+  }, []);
 
-  const handleFetchOdd = async() => {
-    try{
-        setLoading(true)
-      const odd = await fetchOdds(fixId)
-      console.log("old", odds)
-      setOdds(odd.data)
-      console.log(odd)
-      
-    }catch(error){
-      console.log(error)
-    }finally {
-     setLoading(false)
+  const handleFetchOdd = async () => {
+    try {
+      setLoading(true);
+      const odd = await fetchOdds(fixId);
+      setOdds(odd.data);
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoading(false);
     }
-  }
+  };
 
-  if(!odds) return <h1>No odd Found</h1>
+  if (!odds) return <h1>No odd Found</h1>;
+  
   const { away, home } = team?.teams;
   const { logo: firstTeamLogo, name: firstTeam } = home;
   const { logo: secondTeamLogo, name: secondTeam } = away;
@@ -49,7 +41,7 @@ export default function Odds({ team, fixId }) {
     return 1;
   });
 
-  const handleOddClick = (value, odd) => {
+  const handleOddClick = (value) => {
     const existingData = localStorage.getItem("book");
     const newOdd = {
       option: value,
@@ -63,7 +55,6 @@ export default function Odds({ team, fixId }) {
 
     if (existingData) {
       const oddsArray = JSON.parse(existingData);
-
       const existingIndex = oddsArray.findIndex(odd => odd.fixtureId === fixtureId);
 
       if (existingIndex !== -1) {
@@ -71,17 +62,24 @@ export default function Odds({ team, fixId }) {
       } else {
         oddsArray.push(newOdd);
       }
-
       localStorage.setItem("book", JSON.stringify(oddsArray));
     } else {
       localStorage.setItem("book", JSON.stringify([newOdd]));
     }
-    enqueueSnackbar('I love hooks')
-    alert("Add odd")
+
+    setSnackbarMessage("Bookmark added successfully.");
+    setSnackbarOpen(true);
+  };
+
+  const handleSnackbarClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setSnackbarOpen(false);
   };
 
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" className="hide-scrollbar"> {/* Apply hide-scrollbar class */}
       <Box mb={4}>
         <Typography variant="h6" align="center" color="primary" gutterBottom>
           {league.name} - {new Date(fixture.date).toLocaleString()}
@@ -90,17 +88,16 @@ export default function Odds({ team, fixId }) {
           Bookmaker: {bookmaker.name}
         </Typography>
 
-             
-         <div className="flex">
-         <Typography variant="body1" align="center" color="primary" gutterBottom>
-          {firstTeam}
-        </Typography>
-        <Typography variant="body2" align="center" color="white" gutterBottom sx={{margin: "0px 20px"}}>
-          Vs
-        </Typography>
-        <Typography variant="body1" align="center" color="primary" gutterBottom>
-          {secondTeam}
-        </Typography>
+        <div className="flex">
+          <Typography variant="body1" align="center" color="primary" gutterBottom>
+            {firstTeam}
+          </Typography>
+          <Typography variant="body2" align="center" color="white" gutterBottom sx={{ margin: "0px 20px" }}>
+            Vs
+          </Typography>
+          <Typography variant="body1" align="center" color="primary" gutterBottom>
+            {secondTeam}
+          </Typography>
         </div>    
       </Box>
 
@@ -114,7 +111,7 @@ export default function Odds({ team, fixId }) {
             {bet.values.map((option, idx) => (
               <Grid item xs={12} sm={6} md={4} lg={2.4} key={idx}>
                 <Card
-                  onClick={() => handleOddClick(option.value, option.odd)}
+                  onClick={() => handleOddClick(option.value)}
                   style={{
                     width: "100%",
                     height: "100%",
@@ -141,8 +138,12 @@ export default function Odds({ team, fixId }) {
         </Box>
       ))}
 
-      <Spiner loading={loading}/>
-      {show && <Toast message={"Added to book"}/>}
+      <CustomSnackbar
+        open={snackbarOpen}
+        message={snackbarMessage}
+        onClose={handleSnackbarClose}
+      />
+      <Spinner loading={loading} />
     </Container>
   );
 }
