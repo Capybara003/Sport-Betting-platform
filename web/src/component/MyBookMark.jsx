@@ -6,22 +6,19 @@ import {
   CardContent,
   Container,
   Box,
+  Button,
+  Modal,
+  Fade,
+  FormControl,
+  FormLabel,
+  Radio,
+  RadioGroup,
+  TextField,
 } from "@mui/material";
 import Backdrop from "@mui/material/Backdrop";
-import Modal from "@mui/material/Modal";
-import Button from "@mui/material/Button";
-import Fade from "@mui/material/Fade";
-import TextField from "@mui/material/TextField";
-import FormControl from "@mui/joy/FormControl";
-import FormLabel from "@mui/joy/FormLabel";
-import Radio from "@mui/joy/Radio";
-import RadioGroup from "@mui/joy/RadioGroup";
-import {
-    Unstable_NumberInput as BaseNumberInput,
-    numberInputClasses,
-  } from '@mui/base/Unstable_NumberInput';
-  
-import {createTicket} from "../action/action"
+import { createTicket } from "../action/action";
+import CustomSnackbar from '../component/Snackbar'; // Import the CustomSnackbar component
+
 const style = {
   position: "absolute",
   top: "50%",
@@ -34,39 +31,16 @@ const style = {
   p: 4,
 };
 
-const NumberInput = React.forwardRef(function CustomNumberInput(props, ref) {
-    return (
-      <BaseNumberInput
-        slots={{
-          root: InputRoot,
-          input: InputElement,
-          incrementButton: Button,
-          decrementButton: Button,
-        }}
-        slotProps={{
-          incrementButton: {
-            children: <span className="arrow">▴</span>,
-          },
-          decrementButton: {
-            children: <span className="arrow">▾</span>,
-          },
-        }}
-        {...props}
-        ref={ref}
-      />
-    );
-  });
-  
-  
-
 export default function MyBookMark() {
   const oddsData = localStorage.getItem("book");
-  const initialOddsArray = oddsData ? JSON.parse(oddsData) : []; 
+  const initialOddsArray = oddsData ? JSON.parse(oddsData) : [];
   const [open, setOpen] = useState(false);
-  const [oddsArray, setOddsArray] = useState(initialOddsArray); 
+  const [oddsArray, setOddsArray] = useState(initialOddsArray);
   const [isPaid, setIsPaid] = useState(""); // This state tracks the radio button value
   const [price, setPrice] = useState(""); // This tracks the price input field value
-  const [loading, setLoading] = useState(false) 
+  const [loading, setLoading] = useState(false);
+  const [snackbarOpen, setSnackbarOpen] = useState(false); // Snackbar open state
+  const [snackbarMessage, setSnackbarMessage] = useState(""); // Snackbar message
 
   // Open and close modal
   const handleOpen = () => setOpen(true);
@@ -84,32 +58,44 @@ export default function MyBookMark() {
     );
     localStorage.setItem("book", JSON.stringify(updatedOddsArray));
     setOddsArray(updatedOddsArray);
+    
+    // Show snackbar
+    setSnackbarMessage("Bookmark removed successfully.");
+    setSnackbarOpen(true);
   };
 
-  const handleTicketBooking = async() => {
-    try{
-    setLoading(true)
-     const oddsData = localStorage.getItem("book");
-     const initialOddsArray = oddsData ? JSON.parse(oddsData) : []; 
+  const handleTicketBooking = async () => {
+    try {
+      setLoading(true);
+      const oddsData = localStorage.getItem("book");
+      const initialOddsArray = oddsData ? JSON.parse(oddsData) : [];
 
-     const body = {
+      const body = {
         paid: isPaid,
         amount: Number(price),
         bets: initialOddsArray,
-     }
+      };
 
-     const data =  await createTicket(body)
-     if(data.status < 202){
-        localStorage.removeItem('book');  
-     }
-     console.log(data)
-     alert(data.message)
-    }catch(error){
-     console.log(error)
-    }finally{
-     setLoading(false)
+      const data = await createTicket(body);
+      if (data.status < 202) {
+        localStorage.removeItem("book");
+      }
+      console.log(data);
+      alert(data.message);
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoading(false);
     }
-  }
+  };
+
+  // Close the Snackbar
+  const handleSnackbarClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setSnackbarOpen(false);
+  };
 
   return (
     <Container maxWidth="lg">
@@ -124,17 +110,23 @@ export default function MyBookMark() {
           </Button>
           <Grid container spacing={2}>
             {oddsArray.map((odd, index) => (
-              <Grid item xs={12} sm={6} md={4} lg={3} key={odd.fixtureId}>
+              <Grid item xs={12} sm={6} md={6} lg={6} key={odd.fixtureId}>
                 <Card
                   style={{
-                    height: "100%",
+                    height: "auto", // Allow height to adjust automatically
                     cursor: "pointer",
                     backgroundColor: "#330034",
-                    width: "100%",
+                    padding: "8px", // Reduced padding for less height
+                    borderRadius: "8px", // Rounded corners
                   }}
                   onClick={() => handleRemoveBookmark(odd.fixtureId)}
                 >
-                  <CardContent style={{ padding: "10px", textAlign: "center" }}>
+                  <CardContent
+                    style={{
+                      padding: "8px", // Reduced padding
+                      textAlign: "center",
+                    }}
+                  >
                     <Grid
                       container
                       alignItems="center"
@@ -146,35 +138,49 @@ export default function MyBookMark() {
                           <img
                             src={odd.firstTeamLogo}
                             alt={odd.firstTeam}
-                            style={{ width: 30, height: 30, marginRight: 8 }}
+                            style={{ width: 30, height: 30, marginRight: 8 }} // Adjusted logo size
                           />
-                          <Typography variant="body2" color="primary">
+                          <Typography
+                            variant="body2"
+                            color="primary"
+                            style={{
+                              whiteSpace: "nowrap", // Prevent text from wrapping
+                              overflow: "hidden", // Hide overflow text
+                              textOverflow: "ellipsis", // Show ellipsis for overflow
+                              maxWidth: "80px", // Set a max width to trigger ellipsis
+                            }}
+                          >
                             {odd.firstTeam}
                           </Typography>
-                        </Box>
-                      </Grid>
-
-                      <Grid item>
-                        <Typography variant="h6" color="textSecondary">
-                          vs
-                        </Typography>
-                      </Grid>
-
-                      <Grid item>
-                        <Box display="flex" alignItems="center">
+                          <Typography
+                            variant="body2"
+                            color="white"
+                            padding={"0px 5px"} // Reduced padding
+                          >
+                            vs
+                          </Typography>
                           <img
                             src={odd.secondTeamLogo}
                             alt={odd.secondTeam}
-                            style={{ width: 30, height: 30, marginRight: 8 }}
+                            style={{ width: 30, height: 30, marginLeft: 8 }} // Adjusted logo size
                           />
-                          <Typography variant="body2" color="primary">
+                          <Typography
+                            variant="body2"
+                            color="primary"
+                            style={{
+                              whiteSpace: "nowrap", // Prevent text from wrapping
+                              overflow: "hidden", // Hide overflow text
+                              textOverflow: "ellipsis", // Show ellipsis for overflow
+                              maxWidth: "80px", // Set a max width to trigger ellipsis
+                            }}
+                          >
                             {odd.secondTeam}
                           </Typography>
                         </Box>
                       </Grid>
                     </Grid>
 
-                    <Typography variant="body2" color="white">
+                    <Typography variant="body2" color="#FFD700">
                       {odd.option}
                     </Typography>
                     <Typography variant="body2" color="#7F0376">
@@ -187,6 +193,13 @@ export default function MyBookMark() {
           </Grid>
         </>
       )}
+
+      {/* Reusable Snackbar for feedback */}
+      <CustomSnackbar
+        open={snackbarOpen}
+        message={snackbarMessage}
+        onClose={handleSnackbarClose}
+      />
 
       {/* Modal for booking ticket */}
       <div>
@@ -271,11 +284,12 @@ export default function MyBookMark() {
                   </RadioGroup>
                 </FormControl>
 
-                <Button onClick={() => handleTicketBooking()}>{loading ? "Loading...": "Submit"}</Button>
+                <Button onClick={() => handleTicketBooking()}>
+                  {loading ? "Loading..." : "Submit"}
+                </Button>
               </Box>
             </Box>
           </Fade>
-          
         </Modal>
       </div>
     </Container>

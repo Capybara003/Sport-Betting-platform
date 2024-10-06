@@ -11,6 +11,8 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Avatar from "@mui/material/Avatar";
 import { formatDate } from "../utils/date.formatter";
+import { FaHeart } from "react-icons/fa"; // Import a heart icon for the like button
+import CustomSnackbar from "../component/Snackbar"
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -101,124 +103,205 @@ export default function MyHotOdds() {
 
   return (
     <Box sx={{ bgcolor: "", width: "100%" }}>
-      <div className="overflow-x-auto no-scrollbar mt-3 flex space-x-8 sm:grid sm:grid-cols-3 w-full">
-        {!loading &&
-          tickets?.data?.tickets.map((ticket) => (
-            <section
-              key={ticket.id}
-              className="my-6 mx-4 border border-slate-400 cursor-pointer rounded-lg bg-[#2f0a2f] w-[250px] h-[221px] sm:w-[280px] text-white sm:h-[221px]"
-              onClick={() => handleSelectTicket(ticket)}
-            >
-              <div className="rounded-lg">
-                <div className="p-2 bg-[#5c0156] rounded-lg flex gap-3">
-                  <div className="pt-[5px]">
-                    <FcRating />
-                  </div>
-                  <h3 className="sm:font-base">Rating: {ticket.rating}</h3>
-                </div>
 
-                <div className="flex justify-between gap-4 px-3 py-4 bg-[#2f0a2f]">
-                  <div>
-                    <h3 className="sm:font-base text-[#927c91]">Total Match</h3>
-                    <h3 className="sm:font-base text-white">
-                      {ticket.totalMatch}
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mt-3 w-full">
+            {!loading && tickets?.data?.tickets.length > 0 && tickets?.data.tickets.map((ticket) => (
+              <section
+                key={ticket.id}
+                className="border border-slate-400 cursor-pointer rounded-lg bg-[#2f0a2f] w-full h-[180px] text-white"
+                onClick={() => handleSelectTicket(ticket)}
+              >
+                <div className="rounded-lg">
+                  <div className="p-1 bg-[#5c0156] rounded-lg flex gap-2">
+                    <div className="pt-[3px]">
+                      <FcRating />
+                    </div>
+                    <h3 className="text-sm sm:font-base">
+                      Rating: {ticket.rating}
                     </h3>
                   </div>
 
-                  <div>
-                    <h3 className="sm:font-base text-[#927c91]">Active Match</h3>
-                    <h3 className="sm:font-base text-white">
-                      {ticket.activeMatch}
-                    </h3>
-                  </div>
-                </div>
-
-                <div className="flex justify-between gap-4 px-3 py-4 bg-[#5c0156]">
-                  <div className="bg-[#4a2547] border border-current text-center px-5 rounded-lg py-2">
-                    <h3 className="sm:font-base text-[#927c91]">Paid</h3>
-                    <h3 className="sm:font-base text-white">{ticket.paid}</h3>
-                  </div>
-
-                  <div className="bg-[#4a2547] border border-current text-center px-5 rounded-lg py-2">
-                    <h3 className="sm:font-base text-[#927c91]">Price</h3>
-                    <h3 className="sm:font-base text-white">
-                      {ticket.price} SOL
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </section>
-          ))}
-      </div>
-      <Modal
-        keepMounted
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="keep-mounted-modal-title"
-        aria-describedby="keep-mounted-modal-description"
-      >
-        <Box sx={style}>
-          <div className="grid grid-cols-2 gap-4"> {/* Add grid and two-column layout */}
-            {bet &&
-              bet?.bets.map((bet) => {
-                const dates = formatDate(bet.matchDate);
-                return (
-                  <div className="bg-[#1D001B] py-5 px-3" key={bet.id}>
-                    <div className="flex justify-between">
-                      <div className="flex">
-                        <Avatar
-                          alt="League Logo"
-                          src={bet.firstTeamLogo}
-                          sx={{ width: 28, height: 28, bgcolor: "#fff" }}
-                        />
-                        <Typography
-                          variant="body2"
-                          marginLeft="10px"
-                          color="white"
-                        >
-                          {bet.firstTeam}
-                        </Typography>
-                      </div>
-
-                      <Typography
-                        variant="body2"
-                        marginLeft="10px"
-                        color="white"
-                        style={{ opacity: 1 }}
-                      >
-                        {bet.option}
-                      </Typography>
-
-                      <div className="flex">
-                        <Avatar
-                          alt="League Logo"
-                          src={bet.secondTeamLogo}
-                          sx={{ width: 28, height: 28, bgcolor: "#fff" }}
-                        />
-                        <Typography
-                          variant="body2"
-                          marginLeft="10px"
-                          color="white"
-                        >
-                          {bet.secondTeam}
-                        </Typography>
-                      </div>
+                  <div className="flex justify-between gap-2 px-2 py-2 bg-[#2f0a2f]">
+                    <div>
+                      <h3 className="text-xs sm:font-base text-[#927c91]">Total Match</h3>
+                      <h3 className="text-sm sm:font-base text-white">{ticket.totalMatch}</h3>
                     </div>
 
-                    <b
-                      className="flex justify-center align-center"
-                      style={{ opacity: 0.2 }}
-                    >
-                      {dates}
-                    </b>
+                    <div>
+                      <h3 className="text-xs sm:font-base text-[#927c91]">Active Match</h3>
+                      <h3 className="text-sm sm:font-base text-white">{ticket.activeMatch}</h3>
+                    </div>
                   </div>
-                );
-              })}
+
+                  <div className="flex justify-between gap-2 px-2 py-2 bg-[#5c0156]">
+                    <div className="bg-[#4a2547] border border-current text-center px-3 rounded-lg py-1">
+                      <h3 className="text-xs sm:font-base text-[#927c91]">Paid</h3>
+                      <h3 className="text-sm sm:font-base text-white">{ticket.paid}</h3>
+                    </div>
+
+                    <div className="bg-[#4a2547] border border-current text-center px-3 rounded-lg py-1">
+                      <h3 className="text-xs sm:font-base text-[#927c91]">Price</h3>
+                      <h3 className="text-sm sm:font-base text-white">{ticket.price} SOL</h3>
+                    </div>
+                  </div>
+
+                  {/* Like Button (No Functionality) */}
+                  <div className="flex justify-end p-2">
+                    <button
+                      className="flex items-center text-white cursor-pointer"
+                    >
+                      <FaHeart className="mr-1" color="red" />
+                      <span>{ticket.likes || 0}</span> {/* Placeholder for like count */}
+                    </button>
+                  </div>
+                </div>
+              </section>
+            ))}
+
+            <div>{!loading && tickets?.data?.tickets.length < 1 && <h1>No Current Ticket</h1>}</div>
           </div>
-        </Box>
-      </Modal>
+
+          <Modal
+  keepMounted
+  open={open}
+  onClose={handleClose}
+  aria-labelledby="keep-mounted-modal-title"
+  aria-describedby="keep-mounted-modal-description"
+>
+  <Box
+    sx={{
+      width: "95%", // Increased width for a spacious look
+      maxWidth: "800px", // Max width of the modal
+      bgcolor: "#1A0033", // Background color
+      borderRadius: "12px", // Rounded corners
+      boxShadow: 24,
+      padding: "20px",
+      margin: "auto",
+      mt: 8,
+      overflowX: "hidden", // Ensure no overflow in the modal
+    }}
+  >
+    <Typography
+      id="keep-mounted-modal-title"
+      variant="h6"
+      component="h2"
+      color="white"
+      textAlign="center"
+      fontWeight="bold"
+      mb={2}
+      sx={{
+        fontSize: "20px",
+        textTransform: "uppercase",
+        whiteSpace: "nowrap",
+        overflow: "hidden",
+        textOverflow: "ellipsis",
+      }}
+    >
+      Match Bets
+    </Typography>
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {bet &&
+        bet?.bets.map((bet) => {
+          const dates = formatDate(bet.matchDate);
+          return (
+            <div
+              className="rounded-lg shadow-lg p-5 bg-[#2A002A] border border-[#660066]"
+              key={bet.id}
+            >
+              <div className="flex justify-between items-center mb-3">
+                {/* First Team */}
+                <div className="flex items-center space-x-3 w-[35%]">
+                  <Avatar
+                    alt="First Team Logo"
+                    src={bet.firstTeamLogo}
+                    sx={{
+                      width: 35,
+                      height: 35,
+                      bgcolor: "#fff",
+                      border: "1px solid #ffffff33",
+                    }}
+                  />
+                  <Typography
+                    variant="body2"
+                    color="white"
+                    fontWeight="bold"
+                    sx={{
+                      whiteSpace: "nowrap", // Prevent text from wrapping
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                    }}
+                  >
+                    {bet.firstTeam}
+                  </Typography>
+                </div>
+
+                {/* Bet Option (Displayed in the center) */}
+                <Typography
+                  variant="body2"
+                  color="#FFD700"
+                  fontWeight="600"
+                  sx={{
+                    whiteSpace: "nowrap", // Prevent wrapping
+                    overflow: "hidden",
+                    textOverflow: "ellipsis", // Show ellipsis if text overflows
+                    textAlign: "center", // Center the option
+                    flex: 1, // Ensure it takes the available space
+                  }}
+                >
+                  {bet.option}
+                </Typography>
+
+                {/* Second Team */}
+                <div className="flex items-center space-x-3 w-[35%]">
+                  <Typography
+                    variant="body2"
+                    color="white"
+                    fontWeight="bold"
+                    sx={{
+                      whiteSpace: "nowrap", // Prevent text wrapping
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                    }}
+                  >
+                    {bet.secondTeam}
+                  </Typography>
+                  <Avatar
+                    alt="Second Team Logo"
+                    src={bet.secondTeamLogo}
+                    sx={{
+                      width: 35,
+                      height: 35,
+                      bgcolor: "#fff",
+                      border: "1px solid #ffffff33",
+                    }}
+                  />
+                </div>
+              </div>
+
+              {/* Match Date */}
+              <Typography
+                variant="caption"
+                color="#ffffff88"
+                display="block"
+                textAlign="center"
+                sx={{
+                  whiteSpace: "nowrap", // Prevent date wrapping
+                  overflow: "hidden",
+                  textOverflow: "ellipsis",
+                }}
+              >
+                {dates}
+              </Typography>
+            </div>
+          );
+        })}
+    </div>
+  </Box>
+</Modal>
 
       <Spinner loading={loading} />
+
+{open && <CustomSnackbar />}
     </Box>
   );
 }
