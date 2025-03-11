@@ -52,13 +52,13 @@ This Sports Betting App is built using **Node.js** and integrates with a cryptoc
 ## Image
 
 1. **User Interface Screenshot:**
-![User Interface Screenshot](Interface.png)
+![User Interface Screenshot](/Interface.png)
 
 2. **Wallet Integration Flow:**
-![Wallet Integration Flow:](Walletconnect.png)
+![Wallet Integration Flow:](/Walletconnect.png)
 
 3. **Betting Result:**
-![Betting Result:](Betting-result.png)
+![Betting Result:](/Betting-result.png)
 
 ## Contributing
 
