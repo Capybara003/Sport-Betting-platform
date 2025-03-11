@@ -49,17 +49,6 @@ This Sports Betting App is built using **Node.js** and integrates with a cryptoc
 - `Place Bets:` Select a sporting event and enter your bet amount.
 - `View History:` Check your betting history to analyze past performance.
 
-## Architecture Diagram
-
-graph TD;
-    A[User Interface] -->|Interacts with| B[Node.js Backend];
-    B -->|Fetches data from| C[MongoDB Database];
-    B -->|Integrates with| D[Wallet Provider];
-    A -->|Displays Events| E[Event Listings];
-    A -->|Shows Betting History| F[Betting History];
-    B -->|Processes Bets| G[Betting Logic];
-    G -->|Updates| H[User Wallet];
-
 ## Image
 
 1. **User Interface Screenshot:**
