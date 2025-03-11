@@ -1,40 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Sports Betting Project
 
-## Getting Started
+## Overview
+This Sports Betting App is built using **Node.js** and integrates with a cryptocurrency wallet to facilitate secure and seamless betting experiences. The application allows users to place bets on various sports events, track their betting history, and manage their wallet balances.
 
-First, run the development server:
+## Features
+- **User Authentication:** Secure login and registration for users.
+- **Event Listings:** View upcoming sports events available for betting.
+- **Betting Functionality:** Place bets on selected events with real-time odds.
+- **Wallet Integration:** Connects to a cryptocurrency wallet for deposits and withdrawals.
+- **Betting History:** Track past bets and their outcomes.
+- **Responsive Design:** User-friendly interface for both desktop and mobile devices.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies Used
+- **Node.js:** Backend server for handling requests and managing data.
+- **Express.js:** Web framework for building the application.
+- **MongoDB:** Database for storing user data, event information, and betting history.
+- **Web3.js:** Library for interacting with the cryptocurrency wallet.
+- **React.js:** Frontend library for building the user interface.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
+- Node.js (v16 or higher)
+- MongoDB (local or cloud instance)
+- A cryptocurrency wallet (e.g., MetaMask)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Steps
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Capybara003/Sport-Betting-platform.git
+   cd Sport-Betting-platform
+    ```
+2. **Install dependencies:**
+    ```bash
+    npm install
+    ```
+3. **Start the server:**
+    ```bash
+    npm start
+    ```
+4. **Access the application:**
+    Open your browser and navigate to `http://localhost:3000`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `Register/Login:` Create an account or log in to access betting features.
+- `Connect Wallet:` Integrate your cryptocurrency wallet to manage funds.
+- `Place Bets:` Select a sporting event and enter your bet amount.
+- `View History:` Check your betting history to analyze past performance.
 
-## Learn More
+## Architecture Diagram
 
-To learn more about Next.js, take a look at the following resources:
+graph TD;
+    A[User Interface] -->|Interacts with| B[Node.js Backend];
+    B -->|Fetches data from| C[MongoDB Database];
+    B -->|Integrates with| D[Wallet Provider];
+    A -->|Displays Events| E[Event Listings];
+    A -->|Shows Betting History| F[Betting History];
+    B -->|Processes Bets| G[Betting Logic];
+    G -->|Updates| H[User Wallet];
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Image
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. **User Interface Screenshot:**
+![User Interface Screenshot](Interface.png)
 
-## Deploy on Vercel
+2. **Wallet Integration Flow:**
+![Wallet Integration Flow:](Walletconnect.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Betting Result:**
+![Betting Result:](Betting-result.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
