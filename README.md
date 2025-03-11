@@ -1,4 +1,4 @@
-# Sports Betting Project
+# Sports Betting Platform
 
 ## Overview
 This Sports Betting App is built using **Node.js** and integrates with a cryptocurrency wallet to facilitate secure and seamless betting experiences. The application allows users to place bets on various sports events, track their betting history, and manage their wallet balances.
