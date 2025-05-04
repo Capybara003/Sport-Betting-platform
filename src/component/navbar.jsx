@@ -11,7 +11,7 @@ const NavbarSection = () => {
 
   return (
     <nav
-      className='fixed w-full top-0 start-0 bg-no-repeat bg-blend-multiply bg-la z-10'
+      className='fixed w-full top-0 start-0 bg-no-repeat bg-blend-multiply bg-la z-10 bg-black/20'
       style={{ backgroundImage: "url('images/image 4.png')" }}
     >
       <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
