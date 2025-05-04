@@ -68,27 +68,27 @@ const NavbarSection = () => {
                 >
                   <li
                     onClick={() => scrollToTopSection(home)}
-                    className='block px-4 py-2 text-sm hover:bg-gray-100'
+                    className='block px-4 py-2 text-sm hover:bg-gray-100 hover:text-purple-700'
                   >
                     Home
                   </li>
                   <li
                     onClick={() => scrollToTopSection(about)}
-                    className='block px-4 py-2 text-sm hover:bg-gray-100'
+                    className='block px-4 py-2 text-sm hover:bg-gray-100 hover:text-purple-700'
                     role='menuitem'
                   >
                     About
                   </li>
                   <li
                     onClick={() => scrollToTopSection(service)}
-                    className='block px-4 py-2 text-sm hover:bg-gray-100'
+                    className='block px-4 py-2 text-sm hover:bg-gray-100 hover:text-purple-700'
                     role='menuitem'
                   >
                     Features
                   </li>
                   <li
                     onClick={() => scrollToTopSection(b)}
-                    className='block px-4 py-2 text-sm hover:bg-gray-100'
+                    className='block px-4 py-2 text-sm hover:bg-gray-100 hover:text-purple-700'
                     role='menuitem'
                   >
                     Benefits
